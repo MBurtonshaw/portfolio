@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content
+
+    h1.whoops Whoops... my bad; 500
+    if err
+        h2= err.status
+
+        p= err.message

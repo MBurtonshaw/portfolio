@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en" dir="ltr")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Burtonshaw Portfolio
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(rel='stylesheet', href='/static/css/normalize.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
+    link(rel='stylesheet', href='/static/css/index.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+  body
+    #my-info.sidebar
+      .sidebar-info-box
+        br
+        .thumbnail-box
+          img.thumbnail(src='/static/img/ProfilePhoto.jpg', alt='Profile photo of a bald man with glasses and a red beard')
+        .dev-intro-box
+
+          h5 Matthew Burtonshaw
+
+          p From working on a farm to working with the DOM; I am a full-stack developer in training with a penchant for functional design and a growing curiosity toward web 3.0
+
+          a(href='/about') Learn More &rarr;
+
+    .wrapper
+      .header
+        .header-info-box
+          button#menu-icon.menu-icon(type='button' data-toggle='my-info')
+
+          span Matthew Burtonshaw
+
+      block content
+
+  script(src='/static/js/script.js')
+  script(src='/static/js/fade.js')
