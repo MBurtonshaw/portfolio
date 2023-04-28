@@ -5,9 +5,6 @@ $('#hidden_break').remove();
 $('.is-visible').toggleClass('project_img_small');
 $('#button_div').toggleClass('button_div');
 
-if ($(window).width() > 896) {
-    $("#hider").show();
-}
 
 if ($(window).width() <= 896) {
     $(body).toggleClass('centered');
