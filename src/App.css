@@ -252,8 +252,7 @@ p{
 .sidebar {
   position: absolute;
   top: 0;
-  left: -300px;
-  bottom: 0;
+  left: 0;
   min-width: 300px;
   max-width: 300px;
   height: 100%;

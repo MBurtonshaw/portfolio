@@ -54,7 +54,7 @@ export default function Home(props) {
                             if (window.innerWidth >= 626 && window.innerWidth < 1025) {
                                 //two w/o pic
                                 
-                                if (index < 4) {
+                                if (index < 6) {
                                     return(
                                     <div className='cell' key={index}>
                                         <a href={'/projects/' + index}>

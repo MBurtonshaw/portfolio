@@ -7,7 +7,7 @@
                 "project_name": "Winter Gardening Site",
                 "description": "Learn about Winter gardening in Northern climates. I made this while practicing Bootstrap with React",
                 "technologies": ["Bootstrap", "React", "React-Router-6"],
-                "live_link": "https://winter-gardening.herokuapp.com/",
+                "live_link": "https://winter-gardening.vercel.app/",
                 "github_link": "https://github.com/MBurtonshaw/winter_gardening",
                 "image_urls": ["/static/img/p11_1.png", "/static/img/p11_2.png", "/static/img/p11_3.png", "/static/img/p11_4.png"]
             },
