@@ -90,6 +90,7 @@ p{
 /*
   Classes
 */
+
 .box {
   width: 100%;
   max-width: 1200px;
@@ -256,9 +257,24 @@ p{
   min-width: 300px;
   max-width: 300px;
   height: 100%;
-  min-height: 1200px;
   padding: 20px;
   background: #000;
+}
+
+.sidebar-longest {
+  min-height: 2400px;
+}
+
+.sidebar-longer {
+  min-height: 1900px;
+}
+
+.sidebar-long {
+  min-height: 1700px;
+}
+
+.sidebar-extend {
+  min-height: 1500px;
 }
 
 .sidebar-info-box {
@@ -309,6 +325,26 @@ p{
   height: 100%;
   min-height: 100%;
   background: #fefefe;
+}
+
+.wrapper-righter {
+  position: absolute;
+  width: 70%;
+  margin-left: 30%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%;
+  background: #fefefe;
+}
+
+.small-y-space {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.y-space {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 /*

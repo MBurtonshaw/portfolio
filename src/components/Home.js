@@ -195,7 +195,7 @@ export default function Home(props) {
                             {
                                 if (index < 6) {
                                     return(
-                                        <div className='cell' key={index}>
+                                        <div className='cell small-y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
@@ -236,7 +236,7 @@ export default function Home(props) {
                             {
                                 if (index < 6) {
                                     return(
-                                        <div className='cell' key={index}>
+                                        <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
@@ -277,7 +277,7 @@ export default function Home(props) {
                             {
                                 if (index < 8) {
                                     return(
-                                        <div className='cell' key={index}>
+                                        <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
@@ -286,7 +286,7 @@ export default function Home(props) {
                                     );
                                 } else {
                                     return(
-                                        <div className='cell' key={index}>
+                                        <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
@@ -301,6 +301,48 @@ export default function Home(props) {
             </div>
         );
     }
+
+    else if (window.innerWidth >= 2050) {
+
+        return(
+            <div id='home_wrapper' className='wrapper-righter centered'>
+                <article className='portfolio-intro'>
+                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <p id='shirt'>
+                        My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
+                        Click on a project thumbnail to learn more about my apps:</p>
+                </article>
+                <article className='portfolio-project-thumbs'>
+                    <div className='projects-box box grid'>
+                        { projects.map((project, index) =>
+                            {
+                                if (index < 8) {
+                                    return(
+                                        <div className='cell y-space' key={index}>
+                                            <a href={'/projects/' + index}>
+                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                <h5>{project.project_name}</h5>
+                                            </a>
+                                        </div>
+                                    );
+                                } else {
+                                    return(
+                                        <div className='cell y-space' key={index}>
+                                            <a href={'/projects/' + index}>
+                                                <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                <h5>{project.project_name}</h5>
+                                            </a>
+                                        </div>
+                                    );
+                                }
+                            }
+                        )}
+                    </div>
+                </article>
+            </div>
+        );
+    }
+
 
     } else {
 
