@@ -15,11 +15,17 @@ export default function Sidebar() {
                         </a>
                     </div>
                     <div className='dev-intro-box'>
-                        <h5>MATTHEW BURTONSHAW</h5>
-                        <p>From working on a farm to working with the DOM; 
+                        <h5>
+                            MATTHEW BURTONSHAW
+                        </h5>
+                        <p>
+                            From working on a farm to working with the DOM; 
                             I am a full-stack JavaScript developer with a penchant 
-                            for functionality in design.</p>
-                        <a href='/about'> Learn more </a>
+                            for functionality in design.
+                        </p>
+                        <a href='/about'> 
+                            Learn more 
+                        </a>
                 
                     </div>
                 </div>
@@ -38,12 +44,17 @@ export default function Sidebar() {
                         </a>
                     </div>
                     <div className='dev-intro-box'>
-                        <h5>MATTHEW BURTONSHAW</h5>
-                        <p>From working on a farm to working with the DOM; 
+                        <h5>
+                            MATTHEW BURTONSHAW
+                        </h5>
+                        <p>
+                            From working on a farm to working with the DOM; 
                             I am a full-stack JavaScript developer with a penchant 
-                            for functionality in design.</p>
-                        <a href='/about'> Learn more </a>
-                
+                            for functionality in design.
+                        </p>
+                        <a href='/about'> 
+                            Learn more 
+                        </a>
                     </div>
                 </div>
             </div>
@@ -61,11 +72,17 @@ export default function Sidebar() {
                         </a>
                     </div>
                     <div className='dev-intro-box'>
-                        <h5>MATTHEW BURTONSHAW</h5>
-                        <p>From working on a farm to working with the DOM; 
+                        <h5>
+                            MATTHEW BURTONSHAW
+                        </h5>
+                        <p>
+                            From working on a farm to working with the DOM; 
                             I am a full-stack JavaScript developer with a penchant 
-                            for functionality in design.</p>
-                        <a href='/about'> Learn more </a>
+                            for functionality in design.
+                        </p>
+                        <a href='/about'> 
+                            Learn more 
+                        </a>
                 
                     </div>
                 </div>
@@ -84,11 +101,17 @@ export default function Sidebar() {
                         </a>
                     </div>
                     <div className='dev-intro-box'>
-                        <h5>MATTHEW BURTONSHAW</h5>
-                        <p>From working on a farm to working with the DOM; 
+                        <h5>
+                            MATTHEW BURTONSHAW
+                        </h5>
+                        <p>
+                            From working on a farm to working with the DOM; 
                             I am a full-stack JavaScript developer with a penchant 
-                            for functionality in design.</p>
-                        <a href='/about'> Learn more </a>
+                            for functionality in design.
+                        </p>
+                        <a href='/about'>
+                            Learn more 
+                        </a>
                 
                     </div>
                 </div>

@@ -17,63 +17,75 @@ export default function Home(props) {
 
         if (window.innerWidth < 626) {
 
-        return(
-            <div id='home_wrapper' className='wrapper centered'>
-                <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
-                    <p id='shirt'>
-                        My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
-                </article>
-                <article className='portfolio-project-thumbs'>
-                    <div className='projects-box box grid'>
-                        { projects.map((project, index) =>
-                            {
-                                if (index === 0) {
-                                    return(
-                                        <div className='cell' key={index}>
-                                            <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
-                                } else if (index === 1) {
-                                    return(
-                                        <div className='cell' key={index}>
-                                            <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
-                                } else {
-                                    return(
-                                        <div className='cell' key={index}>
-                                            <a href={'/projects/' + index}>
-                                                <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+            return(
+                <div id='home_wrapper' className='wrapper centered'>
+                    <article className='portfolio-intro'>
+                        <h1 id='hat'className='hat'>
+                            Hey, Potential Employers!
+                        </h1>
+                        <p id='shirt'>
+                            My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
+                            Click on a project thumbnail to learn more about my apps:
+                        </p>
+                    </article>
+                    <article className='portfolio-project-thumbs'>
+                        <div className='projects-box box grid'>
+                            { projects.map((project, index) =>
+                                {
+                                    if (index === 0) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else if (index === 1) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    }
                                 }
-                            }
-                        )}
-                    </div>
-                </article>
-            </div>
-        );
-    }
+                            )}
+                        </div>
+                    </article>
+                </div>
+            );
+        }
 
     if (window.innerWidth >= 626 && window.innerWidth < 897) {
 
         return(
             <div id='home_wrapper' className='wrapper centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -94,7 +106,9 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -103,7 +117,9 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'/projects/' + index}>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -113,7 +129,9 @@ export default function Home(props) {
                                         <div className='cell' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -131,10 +149,13 @@ export default function Home(props) {
         return(
             <div id='home_wrapper' className='wrapper centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -146,7 +167,9 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -155,26 +178,32 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         )
                                     } else {
-                                            return(
-                                                <div className='cell' key={index}>
-                                                    <a href={'/projects/' + index}>
-                                                        <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                        <h5>{project.project_name}</h5>
-                                                    </a>
-                                                </div>
-                                            );
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
                                     }
                                 } else {
                                     return(
                                         <div className='cell' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -192,10 +221,13 @@ export default function Home(props) {
         return(
             <div id='home_wrapper' className='wrapper centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -207,7 +239,9 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -216,7 +250,9 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -225,7 +261,9 @@ export default function Home(props) {
                                             <div className='cell' key={index}>
                                                 <a href={'/projects/' + index}>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -235,7 +273,9 @@ export default function Home(props) {
                                         <div className='cell' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -253,10 +293,13 @@ export default function Home(props) {
         return(
             <div id='home_wrapper' className='wrapper centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -265,28 +308,34 @@ export default function Home(props) {
                                 if (index < 6) {
                                     if (index === 0) {
                                         return(
-                                        <div className='cell small-y-space' key={index}>
-                                            <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                            <div className='cell small-y-space' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
                                     } else if (index === 1) {
                                         return(
-                                        <div className='cell small-y-space' key={index}>
-                                            <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                            <div className='cell small-y-space' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
                                     } else {
                                         return(
                                             <div className='cell small-y-space' key={index}>
                                                 <a href={'/projects/' + index}>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -296,7 +345,9 @@ export default function Home(props) {
                                         <div className='cell' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -314,10 +365,13 @@ export default function Home(props) {
         return(
             <div id='home_wrapper' className='wrapper-right centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -326,28 +380,34 @@ export default function Home(props) {
                                 if (index < 6) {
                                     if (index === 0) {
                                         return(
-                                        <div className='cell y-space' key={index}>
-                                            <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                            <div className='cell y-space' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
                                     } else if (index === 1) {
                                         return(
-                                        <div className='cell y-space' key={index}>
-                                            <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                            <div className='cell y-space' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
                                     } else {
                                         return(
                                             <div className='cell y-space' key={index}>
                                                 <a href={'/projects/' + index}>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -357,7 +417,9 @@ export default function Home(props) {
                                         <div className='cell' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -375,10 +437,13 @@ export default function Home(props) {
         return(
             <div id='home_wrapper' className='wrapper-right centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -390,7 +455,9 @@ export default function Home(props) {
                                             <div className='cell y-space' key={index}>
                                                 <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
@@ -399,26 +466,32 @@ export default function Home(props) {
                                             <div className='cell y-space' key={index}>
                                                 <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                    <h5>{project.project_name}</h5>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
                                                 </a>
                                             </div>
                                         );
                                     } else {
                                         return(
-                                        <div className='cell y-space' key={index}>
-                                            <a href={'/projects/' + index}>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                            <div className='cell y-space' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>
+                                                        {project.project_name}
+                                                    </h5>
+                                                </a>
+                                            </div>
+                                        );
                                     }
                                 } else {
                                     return(
                                         <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -436,10 +509,13 @@ export default function Home(props) {
         return(
             <div id='home_wrapper' className='wrapper-righter centered'>
                 <article className='portfolio-intro'>
-                    <h1 id='hat'className='hat'>Hey, Potential Employers!</h1>
+                    <h1 id='hat'className='hat'>
+                        Hey, Potential Employers!
+                    </h1>
                     <p id='shirt'>
                         My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
-                        Click on a project thumbnail to learn more about my apps:</p>
+                        Click on a project thumbnail to learn more about my apps:
+                    </p>
                 </article>
                 <article className='portfolio-project-thumbs'>
                     <div className='projects-box box grid'>
@@ -450,7 +526,9 @@ export default function Home(props) {
                                         <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
@@ -459,7 +537,9 @@ export default function Home(props) {
                                         <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail flashcard' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
+                                                <h5>
+                                                    {project.project_name}
+                                                </h5>
                                             </a>
                                         </div>
                                     );
