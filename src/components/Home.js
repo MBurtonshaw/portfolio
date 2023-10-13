@@ -32,7 +32,7 @@ export default function Home(props) {
                                 if (index < 1) {
                                     return(
                                         <div className='cell' key={index}>
-                                            <a href={'/projects/' + index}>
+                                            <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
                                             </a>
@@ -71,14 +71,25 @@ export default function Home(props) {
                         { projects.map((project, index) =>
                             {
                                 if (index < 4) {
-                                    return(
-                                        <div className='cell' key={index}>
-                                            <a href={'/projects/' + index}>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                    if (index === 0) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    }
                                 } else {
                                     return(
                                         <div className='cell' key={index}>
@@ -112,14 +123,25 @@ export default function Home(props) {
                         { projects.map((project, index) =>
                             {
                                 if (index < 6) {
-                                    return(
-                                        <div className='cell' key={index}>
-                                            <a href={'/projects/' + index}>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                    if (index === 0) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else {
+                                            return(
+                                                <div className='cell' key={index}>
+                                                    <a href={'/projects/' + index}>
+                                                        <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                        <h5>{project.project_name}</h5>
+                                                    </a>
+                                                </div>
+                                            );
+                                    }
                                 } else {
                                     return(
                                         <div className='cell' key={index}>
@@ -153,14 +175,25 @@ export default function Home(props) {
                         { projects.map((project, index) =>
                             {
                                 if (index < 4) {
-                                    return(
-                                        <div className='cell' key={index}>
-                                            <a href={'/projects/' + index}>
-                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
-                                                <h5>{project.project_name}</h5>
-                                            </a>
-                                        </div>
-                                    );
+                                    if (index === 0) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    }
                                 } else {
                                     return(
                                         <div className='cell' key={index}>
@@ -194,14 +227,25 @@ export default function Home(props) {
                         { projects.map((project, index) =>
                             {
                                 if (index < 6) {
-                                    return(
+                                    if (index === 0) {
+                                        return(
                                         <div className='cell small-y-space' key={index}>
-                                            <a href={'/projects/' + index}>
+                                            <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
                                             </a>
                                         </div>
                                     );
+                                    } else {
+                                        return(
+                                            <div className='cell small-y-space' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    }
                                 } else {
                                     return(
                                         <div className='cell' key={index}>
@@ -235,14 +279,25 @@ export default function Home(props) {
                         { projects.map((project, index) =>
                             {
                                 if (index < 6) {
-                                    return(
+                                    if (index === 0) {
+                                        return(
                                         <div className='cell y-space' key={index}>
-                                            <a href={'/projects/' + index}>
+                                            <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
                                             </a>
                                         </div>
                                     );
+                                    } else {
+                                        return(
+                                            <div className='cell y-space' key={index}>
+                                                <a href={'/projects/' + index}>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    }
                                 } else {
                                     return(
                                         <div className='cell' key={index}>
@@ -276,7 +331,17 @@ export default function Home(props) {
                         { projects.map((project, index) =>
                             {
                                 if (index < 8) {
-                                    return(
+                                    if (index === 0) {
+                                        return(
+                                            <div className='cell y-space' key={index}>
+                                                <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else {
+                                        return(
                                         <div className='cell y-space' key={index}>
                                             <a href={'/projects/' + index}>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
@@ -284,6 +349,7 @@ export default function Home(props) {
                                             </a>
                                         </div>
                                     );
+                                    }
                                 } else {
                                     return(
                                         <div className='cell y-space' key={index}>
