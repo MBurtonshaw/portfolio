@@ -29,10 +29,19 @@ export default function Home(props) {
                     <div className='projects-box box grid'>
                         { projects.map((project, index) =>
                             {
-                                if (index < 1) {
+                                if (index === 0) {
                                     return(
                                         <div className='cell' key={index}>
                                             <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                <h5>{project.project_name}</h5>
+                                            </a>
+                                        </div>
+                                    );
+                                } else if (index === 1) {
+                                    return(
+                                        <div className='cell' key={index}>
+                                            <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                 <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                 <h5>{project.project_name}</h5>
                                             </a>
@@ -75,6 +84,15 @@ export default function Home(props) {
                                         return(
                                             <div className='cell' key={index}>
                                                 <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else if (index === 1) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                     <h5>{project.project_name}</h5>
                                                 </a>
@@ -132,6 +150,15 @@ export default function Home(props) {
                                                 </a>
                                             </div>
                                         );
+                                    } else if (index === 1) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        )
                                     } else {
                                             return(
                                                 <div className='cell' key={index}>
@@ -179,6 +206,15 @@ export default function Home(props) {
                                         return(
                                             <div className='cell' key={index}>
                                                 <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else if (index === 1) {
+                                        return(
+                                            <div className='cell' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                     <h5>{project.project_name}</h5>
                                                 </a>
@@ -236,6 +272,15 @@ export default function Home(props) {
                                             </a>
                                         </div>
                                     );
+                                    } else if (index === 1) {
+                                        return(
+                                        <div className='cell small-y-space' key={index}>
+                                            <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
+                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                <h5>{project.project_name}</h5>
+                                            </a>
+                                        </div>
+                                    );
                                     } else {
                                         return(
                                             <div className='cell small-y-space' key={index}>
@@ -288,6 +333,15 @@ export default function Home(props) {
                                             </a>
                                         </div>
                                     );
+                                    } else if (index === 1) {
+                                        return(
+                                        <div className='cell y-space' key={index}>
+                                            <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
+                                                <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                <h5>{project.project_name}</h5>
+                                            </a>
+                                        </div>
+                                    );
                                     } else {
                                         return(
                                             <div className='cell y-space' key={index}>
@@ -335,6 +389,15 @@ export default function Home(props) {
                                         return(
                                             <div className='cell y-space' key={index}>
                                                 <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
+                                                    <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
+                                                    <h5>{project.project_name}</h5>
+                                                </a>
+                                            </div>
+                                        );
+                                    } else if (index === 1) {
+                                        return(
+                                            <div className='cell y-space' key={index}>
+                                                <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
                                                     <img id={index} className='thumbnail' src= {'../../img/p' + (index) +'_1.png'} alt={'project ' + index}/>
                                                     <h5>{project.project_name}</h5>
                                                 </a>
