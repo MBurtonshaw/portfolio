@@ -1,5 +1,3 @@
-console.log(screen.width);
-
 $('#hider').hide();
 $('#hidden_break').remove();
 $('.is-visible').toggleClass('project_img_small');

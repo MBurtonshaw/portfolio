@@ -81,6 +81,11 @@ p{
 /*
   IDs
 */
+#about_container {
+  width: 100%;
+  margin-left: 7%;
+}
+
 #link-wrapper {
   width: 100%;
   text-align: center;
@@ -122,6 +127,19 @@ p{
   max-height: 35px;
   margin: auto 0 5px 0;
   padding: 0.45em 1em;
+  background-color: #333;
+  border: 1px solid transparent;
+}
+
+.btn-link-3 {
+
+  text-align: center;
+  color: #fefefe;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  padding: 0.7em 7em;
   background-color: #333;
   border: 1px solid transparent;
 }
@@ -211,6 +229,11 @@ p{
 .portfolio-intro {
   max-width: 1200px;
   padding: 40px 50px 30px;
+}
+
+.portfolio-projects {
+  width: 100%;
+  margin-left: 7%;
 }
 
 .project-img {
@@ -523,4 +546,15 @@ p{
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+@media screen and (max-width: 1580px) {
+
+  #about_container {
+    margin-left: 0%;
+  }
+
+    .portfolio-projects {
+      margin-left: 0%;
+    }
 }
