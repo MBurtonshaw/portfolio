@@ -36,7 +36,7 @@ export default function Project() {
                             </a>
                         </div>
                     );
-                } else if (project.id === 4 || project.id === 6) {
+                } else if (project.id === 6 || project.id === 7) {
                     return(
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.github_link}>
