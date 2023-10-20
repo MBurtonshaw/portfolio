@@ -23,7 +23,7 @@
             {
                 "id": 2,
                 "project_name": "Horror Films",
-                "description": "I'm a horror movie fan, and whenever asked to give recommendations I usually come up blank, or can't think of the answers I would really want to give. So, I created this app to catalogue my favorites/my taste in the genre.",
+                "description": "-STILL A WORK IN PROGRESS- I'm a horror movie fan, and whenever asked to give recommendations I usually come up blank, or can't think of the answers I would really want to give. So, I created this app to catalogue my favorites/my taste in the genre.",
                 "technologies": ["Bootstrap", "React", "React-Router-6"],
                 "live_link": "https://horror-films.vercel.app/",
                 "github_link": "https://github.com/MBurtonshaw/horror_films",
