@@ -20,7 +20,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -78,7 +78,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -147,7 +147,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -218,7 +218,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -289,7 +289,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -360,7 +360,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper-right centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -431,7 +431,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper-right centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
@@ -502,7 +502,7 @@ export default function Home() {
                 <div id='home_wrapper' className='wrapper-righter centered'>
                     <article className='portfolio-intro'>
                         <h1 id='hat'className='hat'>
-                            Hey, Potential Employers!
+                            Welcome!
                         </h1>
                         <p id='shirt'>
                             My name is Matthew Burtonshaw and I'm a full-stack JavaScript developer. Welcome to my portfolio!
