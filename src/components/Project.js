@@ -20,23 +20,7 @@ export default function Project() {
         if (cred.toString() === project.id.toString()) {
 
             function block() {
-                if (project.id === 0) {
-                    return(
-                        <div className='button_div'>
-                            <a className='btn-link' target='_blank' href={project.live_link}>
-                                Link to Cert
-                            </a>
-                        </div>
-                    );
-                } else if (project.id === 1) {
-                    return(
-                        <div className='button_div'>
-                            <a className='btn-link' target='_blank' href={project.live_link}>
-                                Link to Resume
-                            </a>
-                        </div>
-                    );
-                } else if (project.id === 6 || project.id === 7) {
+                if (project.id === 6 || project.id === 7) {
                     return(
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.github_link}>
@@ -58,7 +42,7 @@ export default function Project() {
                 }
             };
             
-            if (project.id === 0 || project.id === 1) {
+            if ( project.id === 6 || project.id === 10 || project.id === 12 || project.id === 13 ) {
                 return(
                     <div className='wrapper'>
                         <nav className='nav'>
@@ -77,66 +61,32 @@ export default function Project() {
                                     </p>
                                 </div>
                                 <div className='project-tech-links-box box'>
+                                    <h6>
+                                        Technologies
+                                    </h6>
+                                        {
+                                            project.technologies.map(
+                                                (technology, index) => <p key={index}>{technology}</p>
+                                            )
+                                        }
+                                    <br></br>
                                     {block()}
                                 </div>
                             </div>
-                        <div id='project_img_box' className='project-img-box box'>
-                            <img className='project_img project_img_small library_pic' src={'../../img/p' + (project.id) + '_2.png'}/>
-                        </div>
-                        <nav className='nav'>
-                            <a href='/'>
-                                Back
-                            </a>
-                        </nav>
-                        </article>
-                    </div>
-                )
-            }
-            else if (project.image_urls.length > 3 && project.id === 2) {
-                return(
-                    <div className='wrapper'>
-                        <nav className='nav'>
-                            <a href='/'>
-                                Back
-                            </a>
-                        </nav>
-                        <article className='portfolio-projects'>
-                        <div className='inner-wrapper flex-row-wrap two-col'>
-                            <div className='project-info-box box'>
-                                <h1>
-                                    {project.project_name}
-                                </h1>
-                                <p>
-                                    {project.description}
-                                </p>
+                            <div className='project-img-box box'>
+                                <img className='project_img project_img_small' src={'../../img/p' + (project.id) + '_2.png'}/>
+                                <img className='project_img project_img_small flashcard' src={'../../img/p' + (project.id) + '_3.png'}/>
                             </div>
-                            <div className='project-tech-links-box box'>
-                                <h6>
-                                    Technologies
-                                </h6>
-                                    {
-                                        project.technologies.map(
-                                            (technology, index) => <p key={index}>{technology}</p>
-                                        )
-                                    }
-                                <br></br>
-                                {block()}
-                            </div>
-                        </div>
-                        <div id='project_img_box' className='project-img-box box'>
-                            <img className='project_img project_img_small library_pic' src={'../../img/p' + (project.id) + '_2.png'}/>
-                            <img className='project_img project_img_small library_pic flashcard' src={'../../img/p' + (project.id) + '_3.png'}/>
-                            <img className='project_img project_img_small library_pic flashcard' src={'../../img/p' + (project.id) + '_4.png'}/>
-                        </div>
-                        <nav className='nav'>
-                            <a href='/'>
-                                Back
-                            </a>
+                            <nav className='nav'>
+                                <a href='/'>
+                                    Back
+                                </a>
                             </nav>
                         </article>
                     </div>
                 )
-            } else if (project.image_urls.length > 3) {
+                 
+            } else {
                 return(
                     <div className='wrapper'>
                         <nav className='nav'>
@@ -180,49 +130,6 @@ export default function Project() {
                         </article>
                     </div>
                 )
-            } else {
-                return(
-                    <div className='wrapper'>
-                        <nav className='nav'>
-                            <a href='/'>
-                                Back
-                            </a>
-                        </nav>
-                        <article className='portfolio-projects'>
-                            <div className='inner-wrapper flex-row-wrap two-col'>
-                                <div className='project-info-box box'>
-                                    <h1>
-                                        {project.project_name}
-                                    </h1>
-                                    <p>
-                                        {project.description}
-                                    </p>
-                                </div>
-                                <div className='project-tech-links-box box'>
-                                    <h6>
-                                        Technologies
-                                    </h6>
-                                        {
-                                            project.technologies.map(
-                                                (technology, index) => <p key={index}>{technology}</p>
-                                            )
-                                        }
-                                    <br></br>
-                                    {block()}
-                                </div>
-                            </div>
-                            <div className='project-img-box box'>
-                                <img className='project_img project_img_small' src={'../../img/p' + (project.id) + '_2.png'}/>
-                                <img className='project_img project_img_small flashcard' src={'../../img/p' + (project.id) + '_3.png'}/>
-                            </div>
-                            <nav className='nav'>
-                                <a href='/'>
-                                    Back
-                                </a>
-                            </nav>
-                        </article>
-                    </div>
-                );
             }
         }
     } 
