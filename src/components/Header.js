@@ -2,7 +2,7 @@ import { React } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export default function Header() {
-    return(
+    return (
         <div id='header_div'>
             <div id='helmet_div'>
                 <HelmetProvider>
@@ -17,8 +17,6 @@ export default function Header() {
                         </title>
                         <link href="../../App.css" rel="stylesheet" />
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" />
-                        <script src='../../js/slide.js' />
-                        <script src='../../js/mobile.js' />
                     </Helmet>
                 </HelmetProvider>
             </div>

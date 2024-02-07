@@ -1,16 +1,21 @@
 import { React, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import data from '../portfolio/data.json';
+import ProfilePhoto from '../portfolio/img/ProfilePhoto.jpg';
 
 export default function Project() {
 
-    let [ projects, setProjects ] = useState();
+    /*                          ASYNC FUNCTIONS                             */
+
+    let [projects, setProjects] = useState();
     async function getProjects() {
         let info = data.data.projects;
         setProjects(info);
     }
 
-    useEffect( () => { getProjects() }, [ setProjects ] );
+    useEffect(() => { getProjects() }, [setProjects]);
+
+    /*                          FUNCTIONS                                   */
 
     let id = useParams();
 
@@ -19,9 +24,9 @@ export default function Project() {
         let project = projects[cred];
         if (cred.toString() === project.id.toString()) {
 
-            function block() {
+            function link_sorter() {
                 if (project.id === 6 || project.id === 7) {
-                    return(
+                    return (
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.github_link}>
                                 Github Repo
@@ -29,7 +34,7 @@ export default function Project() {
                         </div>
                     );
                 } else {
-                    return(
+                    return (
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.live_link}>
                                 Live Demo
@@ -41,10 +46,22 @@ export default function Project() {
                     );
                 }
             };
-            
-            if ( project.id === 6 || project.id === 10 || project.id === 12 || project.id === 13 ) {
+
+            function pic_counter() {
+                if (project.id !== 6 && project.id !== 10 && project.id !== 12 && project.id !== 13) {
+                    return (
+                        <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_4.png'} />
+                    );
+                } else {
+                    return null;
+                }
+            }
+
+            /*                          RENDER                                   */
+
+            if (window.innerWidth < 1400) {
                 return(
-                    <div className='wrapper'>
+                    <div>
                         <nav className='nav'>
                             <a href='/'>
                                 Back
@@ -64,18 +81,19 @@ export default function Project() {
                                     <h6>
                                         Technologies
                                     </h6>
-                                        {
-                                            project.technologies.map(
-                                                (technology, index) => <p key={index}>{technology}</p>
-                                            )
-                                        }
+                                    {
+                                        project.technologies.map(
+                                            (technology, index) => <p key={index}>{technology}</p>
+                                        )
+                                    }
                                     <br></br>
-                                    {block()}
+                                    {link_sorter()}
                                 </div>
                             </div>
                             <div className='project-img-box box'>
-                                <img className='project_img project_img_small' src={'../../img/p' + (project.id) + '_2.png'}/>
-                                <img className='project_img project_img_small flashcard' src={'../../img/p' + (project.id) + '_3.png'}/>
+                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
+                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
+                                {pic_counter()}
                             </div>
                             <nav className='nav'>
                                 <a href='/'>
@@ -84,11 +102,29 @@ export default function Project() {
                             </nav>
                         </article>
                     </div>
-                )
-                 
+                );
             } else {
-                return(
-                    <div className='wrapper'>
+                return (
+                    <div className='row align-items-start'>
+                        <div className='sidebar_proj col' >
+                            <div className='sidebar-info-box'>
+                                <br></br>
+                                <div className='thumbnail-box'>
+                                    <a href='/'>
+                                        <img className='thumbnail' src={ProfilePhoto} />
+                                    </a>
+                                </div>
+                                <div className='dev-intro-box'>
+                                    <h5>
+                                        MATTHEW BURTONSHAW
+                                    </h5>
+                                    <a href='/about'>
+                                        Learn more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col'>
                         <nav className='nav'>
                             <a href='/'>
                                 Back
@@ -96,31 +132,33 @@ export default function Project() {
                         </nav>
                         <article className='portfolio-projects'>
                             <div className='inner-wrapper flex-row-wrap two-col'>
-                                <div className='project-info-box box'>
-                                    <h1>
+                            <div className='row align-items-start'>
+                                <div className='project-info-box box col w-75 m-auto'>
+                                    <h1 className='text-center'>
                                         {project.project_name}
                                     </h1>
-                                    <p>
+                                    <p className='py-3'>
                                         {project.description}
                                     </p>
                                 </div>
-                                <div className='project-tech-links-box box'>
+                                <div className='project-tech-links-box box col w-25 m-auto'>
                                     <h6>
                                         Technologies
                                     </h6>
-                                        {
-                                            project.technologies.map(
-                                                (technology, index) => <p key={index}>{technology}</p>
-                                            )
-                                        }
+                                    {
+                                        project.technologies.map(
+                                            (technology, index) => <p key={index}>{technology}</p>
+                                        )
+                                    }
                                     <br></br>
-                                    {block()}
+                                    {link_sorter()}
+                                </div>
                                 </div>
                             </div>
                             <div className='project-img-box box'>
-                                <img className='project_img project_img_small' src={'../../img/p' + (project.id) + '_2.png'}/>
-                                <img className='project_img project_img_small flashcard' src={'../../img/p' + (project.id) + '_3.png'}/>
-                                <img className='project_img project_img_small flashcard' src={'../../img/p' + (project.id) + '_4.png'}/>
+                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
+                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
+                                {pic_counter()}
                             </div>
                             <nav className='nav'>
                                 <a href='/'>
@@ -128,6 +166,7 @@ export default function Project() {
                                 </a>
                             </nav>
                         </article>
+                        </div>
                     </div>
                 )
             }
