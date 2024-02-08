@@ -41,7 +41,7 @@ p {
 }
 
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
@@ -458,11 +458,29 @@ p {
   max-width: 16%;
 }
 
+.sidebar_proj a {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #555;
+}
+
 .sidebar_about {
   min-height: 100vh;
   padding: 20px;
   background: #000;
   max-width: 16%;
+}
+
+.sidebar_about a {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #555;
 }
 
 .sidebar-extend {

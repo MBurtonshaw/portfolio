@@ -74,15 +74,17 @@ export default function About(props) {
                     </p>
                     <div className='about-bio'>
                         <p>
-                            I'm a web developer who has been teaching myself through an online curriculum. I've recently received the Full Stack JavaScript Tech Degree from TeamTreehouse which allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work that has me building new and fulfilling projects.
-                        </p>
-                        <p>
-                            Previously, I worked for Case Western Reserve University Farm; a research farm where I oversaw the production of organic fruits, vegetables, and mushrooms. I also took part in team planning, led guided tours, and taught seminars in mushroom production. But after years of this type of work, I found my interests had shifted elsewhere.
-                        </p>
-                        <p>
-                            Since focusing on web development, I've also had the opportunity to develop the website of a local cocktail bar, which taught me about real-world application of the skills I'd been learning. I got to work with a business owner as well as a designer; this was a real growing experience and challenged me to learn things well beyond the scope of my current knowledge. I would like to find more meaningful experiences such as that going forward.
+                            I'm a self taught web developer, which began when I received the Full Stack JavaScript Tech Degree from TeamTreehouse (teamtreehouse.com). This curriculum allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work building meaningful and fulfilling projects.
+                            <br></br>
+                            <br></br>
+                            In my previous job, I worked for Case Western Reserve University on a research farm, where I took part in team planning, led guided tours, managed growing areas and taught classes related to Horticulture. But after years of this type of work, I found my interests had shifted elsewhere.
+                            <br></br>
+                            <br></br>
+                            Since focusing on web development, I've also had the opportunity to build the website for a local cocktail bar, which taught me about real-world application of the skills I'd been learning. Since then, I've been working on personal websites in order to continue to practice new techniques and build my portfolio. Going forward, I would like to find meaningful work that will help me to grow as a programmer.
                         </p>
                     </div>
+                    <br></br>
+                    <br></br>
                     <div className='py-1'>
                         <button className='btn-link-4'><a href='http://twopinesdevelopment.com/Tech_Resume.pdf'>Resume</a></button>
                         <button className='btn-link-4'><a href='https://www.linkedin.com/in/matthew-burtonshaw-9495b1191/'>LinkedIn</a></button>

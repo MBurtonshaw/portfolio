@@ -170,7 +170,7 @@ export default function Project() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col fade_in'>
+                        <div className='col'>
                             <nav className='nav'>
                                 <a href='/'>
                                     Back
@@ -201,7 +201,7 @@ export default function Project() {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='project-img-box box'>
+                                <div className='project-img-box box fly_up'>
                                     <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
                                     <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
                                     {pic_counter()}
