@@ -156,19 +156,6 @@ p {
   text-decoration: none;
 }
 
-.btn-link-2 {
-  display: block;
-  text-align: center;
-  color: #fefefe;
-  width: 100%;
-  max-width: 300px;
-  max-height: 35px;
-  margin: auto 0 5px 0;
-  padding: 0.45em 1em;
-  background-color: #333;
-  border: 1px solid transparent;
-}
-
 .btn-link-3 {
   text-align: center;
   color: #fefefe;
@@ -276,6 +263,16 @@ p {
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+.project_pic_border {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.thumbnail_loading_div {
+  min-height: 2em;
+  background-color: black;
+  padding: 1em;
 }
 
 .grayscale:hover {
