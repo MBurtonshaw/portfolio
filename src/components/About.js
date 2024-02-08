@@ -1,7 +1,7 @@
 import { React } from 'react';
 import ProfilePhoto from '../portfolio/img/ProfilePhoto.jpg';
 
-export default function About(props) {
+export default function About() {
 
     let skill_array = ['HTML', 'CSS', 'Javascript', 'JQuery', 'Node.js', 'JSON', 'Express', 'Pug', 'Bootstrap', 'React', 'SQL'];
 
