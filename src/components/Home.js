@@ -151,9 +151,9 @@ export default function Home() {
                     </div>
                     <div className='col port_wrapper'>
                         <div id='home_wrapper' className={`${class_setter()}`}>
-                        
+
                             <article className='portfolio-intro'>
-                            <h1 className='hat'>
+                                <h1 className='hat'>
                                     Hello!
                                 </h1>
                                 <p>

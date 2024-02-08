@@ -138,7 +138,7 @@ p {
   padding: 0.45em 1em;
   background-color: #333;
   border: 1px solid transparent;
-  
+
 }
 
 .btn-link-3 {
@@ -152,7 +152,7 @@ p {
   padding: 0.7em 7em;
   background-color: #333;
   border: 1px solid transparent;
-  
+
 }
 
 .about_width {
@@ -169,7 +169,22 @@ p {
   border: 1px solid transparent;
 }
 
+.btn-link-5 {
+  text-align: center;
+  color: #fefefe;
+
+  padding: 0.7em 7em;
+  min-width: 20em;
+  margin: 0.1em;
+  background-color: #333;
+  border: 1px solid transparent;
+}
+
 .btn-link-4 a {
+  color: white;
+}
+
+.btn-link-5 a {
   color: white;
 }
 

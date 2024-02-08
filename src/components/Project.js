@@ -60,49 +60,95 @@ export default function Project() {
             /*                          RENDER                                   */
 
             if (window.innerWidth < 1400) {
-                return(
-                    <div>
-                        <nav className='nav'>
-                            <a href='/'>
-                                Back
-                            </a>
-                        </nav>
-                        <article className='portfolio-projects'>
-                            <div className='inner-wrapper flex-row-wrap two-col'>
-                                <div className='project-info-box box'>
-                                    <h1>
-                                        {project.project_name}
-                                    </h1>
-                                    <p>
-                                        {project.description}
-                                    </p>
+                if (window.innerWidth < 768) {
+                    return (
+                        <div>
+                            <nav className='nav text-center'>
+                                <a href='/'>
+                                    Back
+                                </a>
+                            </nav>
+                            <article className='text-center'>
+                                <div className='inner-wrapper flex-row-wrap'>
+                                    <div className='project-info-box box'>
+                                        <h1 className='py-2 pb-4'>
+                                            {project.project_name}
+                                        </h1>
+                                        <p>
+                                            {project.description}
+                                        </p>
+                                    </div>
+                                    <div className='project-tech-links-box box'>
+                                        <h6>
+                                            Technologies
+                                        </h6>
+                                        {
+                                            project.technologies.map(
+                                                (technology, index) => <p key={index}>{technology}</p>
+                                            )
+                                        }
+                                        <br></br>
+                                        {link_sorter()}
+                                    </div>
                                 </div>
-                                <div className='project-tech-links-box box'>
-                                    <h6>
-                                        Technologies
-                                    </h6>
-                                    {
-                                        project.technologies.map(
-                                            (technology, index) => <p key={index}>{technology}</p>
-                                        )
-                                    }
-                                    <br></br>
-                                    {link_sorter()}
+                                <div className='project-img-box box'>
+                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
+                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
+                                    {pic_counter()}
                                 </div>
-                            </div>
-                            <div className='project-img-box box'>
-                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
-                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
-                                {pic_counter()}
-                            </div>
+                            </article>
+                            <nav className='nav text-center'>
+                                <a href='/'>
+                                    Back
+                                </a>
+                            </nav>
+                        </div>
+                    );
+                } else {
+                    return (
+                        <div>
                             <nav className='nav'>
                                 <a href='/'>
                                     Back
                                 </a>
                             </nav>
-                        </article>
-                    </div>
-                );
+                            <article className='portfolio-projects'>
+                                <div className='inner-wrapper flex-row-wrap two-col'>
+                                    <div className='project-info-box box'>
+                                        <h1>
+                                            {project.project_name}
+                                        </h1>
+                                        <p>
+                                            {project.description}
+                                        </p>
+                                    </div>
+                                    <div className='project-tech-links-box box'>
+                                        <h6>
+                                            Technologies
+                                        </h6>
+                                        {
+                                            project.technologies.map(
+                                                (technology, index) => <p key={index}>{technology}</p>
+                                            )
+                                        }
+                                        <br></br>
+                                        {link_sorter()}
+                                    </div>
+                                </div>
+                                <div className='project-img-box box'>
+                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
+                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
+                                    {pic_counter()}
+                                </div>
+                                <nav className='nav'>
+                                    <a href='/'>
+                                        Back
+                                    </a>
+                                </nav>
+                            </article>
+                        </div>
+                    );
+                }
             } else {
                 return (
                     <div className='row align-items-start'>
@@ -125,51 +171,51 @@ export default function Project() {
                             </div>
                         </div>
                         <div className='col'>
-                        <nav className='nav'>
-                            <a href='/'>
-                                Back
-                            </a>
-                        </nav>
-                        <article className='portfolio-projects'>
-                            <div className='inner-wrapper flex-row-wrap two-col'>
-                            <div className='row align-items-start'>
-                                <div className='project-info-box box col w-75 m-auto'>
-                                    <h1 className='text-center'>
-                                        {project.project_name}
-                                    </h1>
-                                    <p className='py-3'>
-                                        {project.description}
-                                    </p>
-                                </div>
-                                <div className='project-tech-links-box box col w-25 m-auto'>
-                                    <h6>
-                                        Technologies
-                                    </h6>
-                                    {
-                                        project.technologies.map(
-                                            (technology, index) => <p key={index}>{technology}</p>
-                                        )
-                                    }
-                                    <br></br>
-                                    {link_sorter()}
-                                </div>
-                                </div>
-                            </div>
-                            <div className='project-img-box box'>
-                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
-                                <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
-                                {pic_counter()}
-                            </div>
                             <nav className='nav'>
                                 <a href='/'>
                                     Back
                                 </a>
                             </nav>
-                        </article>
+                            <article className='portfolio-projects'>
+                                <div className='inner-wrapper flex-row-wrap two-col'>
+                                    <div className='row align-items-start'>
+                                        <div className='project-info-box box col w-75 m-auto'>
+                                            <h1 className='text-center'>
+                                                {project.project_name}
+                                            </h1>
+                                            <p className='py-3'>
+                                                {project.description}
+                                            </p>
+                                        </div>
+                                        <div className='project-tech-links-box box col w-25 m-auto'>
+                                            <h6>
+                                                Technologies
+                                            </h6>
+                                            {
+                                                project.technologies.map(
+                                                    (technology, index) => <p key={index}>{technology}</p>
+                                                )
+                                            }
+                                            <br></br>
+                                            {link_sorter()}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='project-img-box box'>
+                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
+                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
+                                    {pic_counter()}
+                                </div>
+                                <nav className='nav'>
+                                    <a href='/'>
+                                        Back
+                                    </a>
+                                </nav>
+                            </article>
                         </div>
                     </div>
                 )
             }
         }
-    } 
+    }
 }
