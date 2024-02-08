@@ -45,6 +45,7 @@ h5 {
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
+  padding-top: 0.5em;
 }
 
 h6 {
@@ -102,7 +103,20 @@ p {
 /*
   Classes
 */
-.about-intro-box-mobile {}
+.about_width {
+  width: 90%;
+  margin: auto;
+}
+
+.about-intro-box p,
+.project-info-box p {
+  font-size: 125%;
+}
+
+.about-bio p {
+  font-size: 15px;
+  padding-top: 40px;
+}
 
 .box {
   width: 100%;
@@ -110,6 +124,21 @@ p {
   padding: 40px 50px 30px;
   background: #fefefe;
   border-bottom: 1px solid #eaeaea;
+}
+
+.box h1,
+.box h6 {
+  margin: 0 auto 8px;
+}
+
+.box h6 {
+  font-size: 1rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.box li {
+  font-size: 13px;
 }
 
 .btn-link {
@@ -138,11 +167,9 @@ p {
   padding: 0.45em 1em;
   background-color: #333;
   border: 1px solid transparent;
-
 }
 
 .btn-link-3 {
-
   text-align: center;
   color: #fefefe;
   width: 100%;
@@ -153,11 +180,6 @@ p {
   background-color: #333;
   border: 1px solid transparent;
 
-}
-
-.about_width {
-  width: 90%;
-  margin: auto;
 }
 
 .btn-link-4 {
@@ -172,7 +194,6 @@ p {
 .btn-link-5 {
   text-align: center;
   color: #fefefe;
-
   padding: 0.7em 7em;
   min-width: 20em;
   margin: 0.1em;
@@ -194,16 +215,15 @@ p {
   margin-left: auto;
 }
 
-h5 {
-  padding-top: 0.5em;
-}
-
-.mobile_div {
+.cell a {
   width: 100%;
 }
 
-.little_left {
-  margin-left: 5em;
+.cell img {
+  width: 100%;
+  min-width: 100px;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
 .centered {
@@ -278,12 +298,52 @@ h5 {
   border-left: 1px solid #0a0a0a;
 }
 
+.header button {
+  vertical-align: top;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  width: 20px;
+  height: 16px;
+  border: none;
+  background: #0a0a0a;
+  margin-top: 3px;
+  margin-right: 10px;
+  border-top: 2px solid #fefefe;
+  border-bottom: 2px solid #fefefe;
+}
+
+.header button:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background: #fefefe;
+}
+
+.header span {
+  display: inline-block;
+  font-weight: bold;
+}
+
+
+
+.little_left {
+  margin-left: 5em;
+}
+
 .library_pic {
   border-top: solid 1px black;
 }
 
 .mini {
   width: 30%;
+}
+
+.mobile_div {
+  width: 100%;
 }
 
 .move_over {
@@ -301,7 +361,30 @@ h5 {
   margin-left: 7%;
 }
 
+.portfolio-intro h1 {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  margin: 0 auto 8px;
+}
 
+.portfolio-intro p {
+  text-rendering: optimizeLegibility;
+  font-size: 125%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.projects-box h5 {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 2.25px;
+  text-transform: uppercase;
+  color: #222;
+  ;
+  margin: 0 auto 8px;
+}
 
 .project-img {
   width: 100%;
@@ -347,6 +430,27 @@ h5 {
   max-width: 16%;
 }
 
+.sidebar a {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.sidebar h5 {
+  color: #fefefe;
+  margin: 0 auto 0.5rem;
+}
+
+.sidebar p {
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  font-size: 14px;
+  color: #999
+}
+
 .sidebar_proj {
   min-height: 260vh;
   padding: 20px;
@@ -369,15 +473,26 @@ h5 {
   margin: auto;
 }
 
+.skills-contact-box {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.slow_fade {
+  animation-duration: 1.5s;
+  animation-name: fade_in;
+  animation-fill-mode: backwards;
+}
+
+.small-y-space {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .thumbnail {
   width: 100%;
   max-width: 250px;
   border: 4px solid #fff;
-}
-
-.skills-contact-box {
-  margin-bottom: 35px;
-  text-align: center;
 }
 
 .thumbnail-box {
@@ -396,6 +511,11 @@ h5 {
   font-weight: bold;
 }
 
+.y-space {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .fly_up {
   animation: fly_up ease-in-out .7s forwards;
 }
@@ -406,12 +526,6 @@ h5 {
 
 .fade_in {
   animation-duration: 1.2s;
-  animation-name: fade_in;
-  animation-fill-mode: backwards;
-}
-
-.slow_fade {
-  animation-duration: 1.5s;
   animation-name: fade_in;
   animation-fill-mode: backwards;
 }
@@ -437,136 +551,35 @@ h5 {
 }
 
 @keyframes fade_in {
-  0% { opacity: 0.2; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 
-.small-y-space {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
 
-.y-space {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
+
+
 
 /*
   Classes + ELements
 */
 
-.about-intro-box p,
-.project-info-box p {
-  font-size: 125%;
-}
 
-.about-bio p {
-  font-size: 15px;
-  padding-top: 40px;
-}
 
-.box h1,
-.box h6 {
-  margin: 0 auto 8px;
-}
 
-.box h6 {
-  font-size: 1rem;
-  font-weight: bolder;
-  letter-spacing: 2px;
-}
 
-.box li {
-  font-size: 13px;
-}
 
-.cell a {
-  width: 100%;
-}
 
-.cell img {
-  width: 100%;
-  min-width: 100px;
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
-}
 
-.header button {
-  vertical-align: top;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  width: 20px;
-  height: 16px;
-  border: none;
-  background: #0a0a0a;
-  margin-top: 3px;
-  margin-right: 10px;
-  border-top: 2px solid #fefefe;
-  border-bottom: 2px solid #fefefe;
-}
 
-.header button:after {
-  content: '';
-  position: absolute;
-  top: 40%;
-  left: 0;
-  width: 20px;
-  height: 2px;
-  background: #fefefe;
-}
 
-.header span {
-  display: inline-block;
-  font-weight: bold;
-}
 
-.portfolio-intro h1 {
-  font-size: 1.5rem;
-  color: #0a0a0a;
-  margin: 0 auto 8px;
-}
 
-.portfolio-intro p {
-  text-rendering: optimizeLegibility;
-  font-size: 125%;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eaeaea;
-}
-
-.projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 2.25px;
-  text-transform: uppercase;
-  color: #222;
-  ;
-  margin: 0 auto 8px;
-}
-
-.sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: #555;
-}
-
-.sidebar h5 {
-  color: #fefefe;
-  margin: 0 auto 0.5rem;
-}
-
-.sidebar p {
-  text-rendering: optimizeLegibility;
-  line-height: 1.6;
-  font-size: 14px;
-  color: #999
-}
 
 @media screen and (min-width: 1830px) {
   .sidebar {
