@@ -50,7 +50,7 @@ export default function Project() {
             function pic_counter() {
                 if (project.id !== 6 && project.id !== 10 && project.id !== 12 && project.id !== 13) {
                     return (
-                        <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_4.png'} />
+                        <img className='project_img project_img_small pt-1' src={'../../img/p' + (project.id) + '_4.png'} />
                     );
                 } else {
                     return null;
@@ -91,9 +91,9 @@ export default function Project() {
                                         {link_sorter()}
                                     </div>
                                 </div>
-                                <div className='project-img-box box'>
-                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_2.png'} />
-                                    <img className='project_img project_img_small py-1' src={'../../img/p' + (project.id) + '_3.png'} />
+                                <div className='project-img-box'>
+                                    <img className='project_img project_img_small pt-1' src={'../../img/p' + (project.id) + '_2.png'} />
+                                    <img className='project_img project_img_small pt-1' src={'../../img/p' + (project.id) + '_3.png'} />
                                     {pic_counter()}
                                 </div>
                             </article>
@@ -157,7 +157,7 @@ export default function Project() {
                                 <br></br>
                                 <div className='thumbnail-box'>
                                     <a href='/'>
-                                        <img className='thumbnail' src={ProfilePhoto} />
+                                        <img className='thumbnail slow_fade' src={ProfilePhoto} />
                                     </a>
                                 </div>
                                 <div className='dev-intro-box'>
@@ -170,7 +170,7 @@ export default function Project() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col'>
+                        <div className='col fade_in'>
                             <nav className='nav'>
                                 <a href='/'>
                                     Back

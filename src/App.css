@@ -102,7 +102,7 @@ p {
 /*
   Classes
 */
-
+.about-intro-box-mobile {}
 
 .box {
   width: 100%;
@@ -404,6 +404,18 @@ h5 {
   animation: fly_down ease-in-out .7s forwards;
 }
 
+.fade_in {
+  animation-duration: 1.2s;
+  animation-name: fade_in;
+  animation-fill-mode: backwards;
+}
+
+.slow_fade {
+  animation-duration: 1.5s;
+  animation-name: fade_in;
+  animation-fill-mode: backwards;
+}
+
 @keyframes fly_up {
   from {
     transform: translateY(50vh);
@@ -422,6 +434,11 @@ h5 {
   to {
     transform: translateY(0vh);
   }
+}
+
+@keyframes fade_in {
+  0% { opacity: 0.2; }
+  100% { opacity: 1; }
 }
 
 
@@ -554,5 +571,10 @@ h5 {
 @media screen and (min-width: 1830px) {
   .sidebar {
     min-height: 200vh;
+  }
+
+  .about-intro-box {
+    width: 85%;
+    margin: auto;
   }
 }

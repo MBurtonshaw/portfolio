@@ -136,7 +136,7 @@ export default function Home() {
                             <br></br>
                             <div className='thumbnail-box'>
                                 <a href='/'>
-                                    <img className='thumbnail' src={ProfilePhoto} />
+                                    <img className='thumbnail slow_fade' src={ProfilePhoto} />
                                 </a>
                             </div>
                             <div className='dev-intro-box'>

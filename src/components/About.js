@@ -14,9 +14,9 @@ export default function About(props) {
                             Back
                         </a>
                     </nav>
-                    <div className='about-intro-box p-5'>
+                    <div className='about-intro-box'>
 
-                        <h1>
+                        <h1 className='pt-4'>
                             Matthew Burtonshaw
                         </h1>
                         <p>
@@ -65,7 +65,7 @@ export default function About(props) {
             );
         } else {
             return (
-                <div className='about-intro-box box col m-auto py-5 w-75'>
+                <div className='about-intro-box box col m-auto py-5 w-75 fly_up'>
                     <h1>
                         Matthew Burtonshaw
                     </h1>
@@ -102,7 +102,7 @@ export default function About(props) {
             );
         } else {
             return (
-                <div className='skills-contact-box col w-25 m-auto'>
+                <div className='skills-contact-box col w-25 m-auto fly_down'>
                     <h6 className='indent listed'>
                         Skills
                     </h6>
@@ -162,7 +162,7 @@ export default function About(props) {
                         <br></br>
                         <div className='thumbnail-box'>
                             <a href='/'>
-                                <img className='thumbnail' src={ProfilePhoto} />
+                                <img className='thumbnail slow_fade' src={ProfilePhoto} />
                             </a>
                         </div>
                         <div className='dev-intro-box'>
