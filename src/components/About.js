@@ -37,7 +37,7 @@ export default function About(props) {
                                 )
                             }
                         </span>
-                        <div className='about-bio px-1'>
+                        <div className='about-bio w-75 m-auto px-1'>
                             <p>
                                 I'm a web developer who has been teaching myself through an online curriculum. I've recently received the Full Stack JavaScript Tech Degree from TeamTreehouse which allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work that has me building new and fulfilling projects.
                                 <br></br>
@@ -50,10 +50,10 @@ export default function About(props) {
 
                         </div>
                         <div className='py-4'>
-                            <button className='btn-link-5'><a href=''>Resume</a></button>
-                            <button className='btn-link-5'><a href=''>LinkedIn</a></button>
-                            <button className='btn-link-5'><a href=''>Certification</a></button>
-                            <button className='btn-link-5'><a href=''>Github</a></button>
+                            <button className='btn-link-5'><a href='http://twopinesdevelopment.com/Tech_Resume.pdf'>Resume</a></button>
+                            <button className='btn-link-5'><a href='https://www.linkedin.com/in/matthew-burtonshaw-9495b1191/'>LinkedIn</a></button>
+                            <button className='btn-link-5'><a href='https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'>Certification</a></button>
+                            <button className='btn-link-5'><a href='https://github.com/MBurtonshaw'>Github</a></button>
                         </div>
                     </div>
                     <nav className='nav'>
@@ -84,10 +84,10 @@ export default function About(props) {
                         </p>
                     </div>
                     <div className='py-1'>
-                        <button className='btn-link-4'><a href=''>Resume</a></button>
-                        <button className='btn-link-4'><a href=''>LinkedIn</a></button>
-                        <button className='btn-link-4'><a href=''>Certification</a></button>
-                        <button className='btn-link-4'><a href=''>Github</a></button>
+                        <button className='btn-link-4'><a href='http://twopinesdevelopment.com/Tech_Resume.pdf'>Resume</a></button>
+                        <button className='btn-link-4'><a href='https://www.linkedin.com/in/matthew-burtonshaw-9495b1191/'>LinkedIn</a></button>
+                        <button className='btn-link-4'><a href='https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'>Certification</a></button>
+                        <button className='btn-link-4'><a href='https://github.com/MBurtonshaw'>Github</a></button>
                     </div>
                 </div>
             );
