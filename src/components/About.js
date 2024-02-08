@@ -9,54 +9,54 @@ export default function About(props) {
         if (window.innerWidth < 768) {
             return (
                 <div>
-                <nav className='nav'>
+                    <nav className='nav'>
                         <a href='/'>
                             Back
                         </a>
                     </nav>
-                <div className='about-intro-box box'>
-                    
-                    <h1>
-                        Matthew Burtonshaw
-                    </h1>
-                    <p>
-                        Full Stack Javascript Developer
-                    </p>
-                    <h5 className='pt-3'>Skills: </h5>
+                    <div className='about-intro-box p-5'>
+
+                        <h1>
+                            Matthew Burtonshaw
+                        </h1>
+                        <p>
+                            Full Stack Javascript Developer
+                        </p>
+                        <h5 className='pt-3'>Skills: </h5>
                         <span>
                             {
                                 skill_array.map(
                                     (skill) => {
                                         if (skill !== 'SQL') {
-                                            return(skill + ', ')
+                                            return (skill + ', ')
                                         } else {
-                                            return(skill)
+                                            return (skill)
                                         }
-                                        
+
                                     }
                                 )
                             }
                         </span>
-                    <div className='about-bio'>
-                        <p>
-                            I'm a web developer who has been teaching myself through an online curriculum. I've recently received the Full Stack JavaScript Tech Degree from TeamTreehouse which allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work that has me building new and fulfilling projects.
-                        </p>
-                        <p>
-                            Previously, I worked for Case Western Reserve University Farm; a research farm where I oversaw the production of organic fruits, vegetables, and mushrooms. I also took part in team planning, led guided tours, and taught seminars in mushroom production. But after years of this type of work, I found my interests had shifted elsewhere.
-                        </p>
-                        <p>
-                            Since focusing on web development, I've also had the opportunity to develop the website of a local cocktail bar, which taught me about real-world application of the skills I'd been learning. I got to work with a business owner as well as a designer; this was a real growing experience and challenged me to learn things well beyond the scope of my current knowledge. I would like to find more meaningful experiences such as that going forward.
-                        </p>
-                        
+                        <div className='about-bio px-1'>
+                            <p>
+                                I'm a web developer who has been teaching myself through an online curriculum. I've recently received the Full Stack JavaScript Tech Degree from TeamTreehouse which allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work that has me building new and fulfilling projects.
+                                <br></br>
+                                <br></br>
+                                Previously, I worked for Case Western Reserve University Farm; a research farm where I oversaw the production of organic fruits, vegetables, and mushrooms. I also took part in team planning, led guided tours, and taught seminars in mushroom production. But after years of this type of work, I found my interests had shifted elsewhere.
+                                <br></br>
+                                <br></br>
+                                Since focusing on web development, I've also had the opportunity to develop the website of a local cocktail bar, which taught me about real-world application of the skills I'd been learning. I got to work with a business owner as well as a designer; this was a real growing experience and challenged me to learn things well beyond the scope of my current knowledge. I would like to find more meaningful experiences such as that going forward.
+                            </p>
+
+                        </div>
+                        <div className='py-4'>
+                            <button className='btn-link-5'><a href=''>Resume</a></button>
+                            <button className='btn-link-5'><a href=''>LinkedIn</a></button>
+                            <button className='btn-link-5'><a href=''>Certification</a></button>
+                            <button className='btn-link-5'><a href=''>Github</a></button>
+                        </div>
                     </div>
-                    <div className='py-4'>
-                        <button className='btn-link-5'><a href=''>Resume</a></button>
-                        <button className='btn-link-5'><a href=''>LinkedIn</a></button>
-                        <button className='btn-link-5'><a href=''>Certification</a></button>
-                        <button className='btn-link-5'><a href=''>Github</a></button>
-                    </div>
-                </div>
-                <nav className='nav'>
+                    <nav className='nav'>
                         <a href='/'>
                             Back
                         </a>
@@ -95,7 +95,7 @@ export default function About(props) {
     }
 
     function filler_2() {
-        
+
         if (window.innerWidth < 768) {
             return (
                 ''
@@ -128,7 +128,7 @@ export default function About(props) {
 
     if (window.innerWidth < 1400) {
         if (window.innerWidth < 768) {
-            return(
+            return (
                 <div>
                     <article className='portfolio-about text-center'>
                         <div id='' className='inner-wrapper flex-row-wrap'>
