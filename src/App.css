@@ -126,6 +126,12 @@ p {
   border-bottom: 1px solid #eaeaea;
 }
 
+.nonchalant {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
 .box h1,
 .box h6 {
   margin: 0 auto 8px;

@@ -41,7 +41,7 @@ export default function Home() {
                     return (
                         <div className={`cell y-space ${animation_setter()}`} key={index}>
                             <a href={'https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'} target='_blank'>
-                                <img id={index} className='thumbnail' src={'../../img/p' + (index) + '_1.png'} alt={'project ' + index} />
+                                <img id={index} className='thumbnail' src={project.image_urls[0]} alt={'project ' + index} />
                                 <h5>
                                     {project.project_name}
                                 </h5>
@@ -52,7 +52,18 @@ export default function Home() {
                     return (
                         <div className={`cell y-space ${animation_setter()}`} key={index}>
                             <a href={'http://twopinesdevelopment.com/Tech_Resume.pdf'} target='_blank'>
-                                <img id={index} className='thumbnail' src={'../../img/p' + (index) + '_1.png'} alt={'project ' + index} />
+                                <img id={index} className='thumbnail' src={project.image_urls[0]} alt={'project ' + index} />
+                                <h5>
+                                    {project.project_name}
+                                </h5>
+                            </a>
+                        </div>
+                    );
+                } else if (index === 3) {
+                    return (
+                        <div className={`cell y-space ${animation_setter()}`} key={index}>
+                            <a href={'/projects/variants'}>
+                                <img id={index} className='thumbnail' src={project.image_urls[0]} alt={'project ' + index} />
                                 <h5>
                                     {project.project_name}
                                 </h5>
@@ -63,7 +74,7 @@ export default function Home() {
                     return (
                         <div className={`cell y-space ${animation_setter()}`} key={index}>
                             <a href={'/projects/' + index}>
-                                <img id={index} className='thumbnail' src={'../../img/p' + (index) + '_1.png'} alt={'project ' + index} />
+                                <img id={index} className='thumbnail' src={project.image_urls[0]} alt={'project ' + index} />
                                 <h5>
                                     {project.project_name}
                                 </h5>

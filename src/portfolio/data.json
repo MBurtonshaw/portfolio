@@ -9,128 +9,137 @@
                 "technologies": [""],
                 "live_link": "https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx",
                 "github_link": "",
-                "image_urls": ["/static/img/p0_1.png", "/static/img/p0_2.png", "/static/img/p0_3.png"]
+                "image_urls": ["../img/p0_1.png"]
             },
             {
                 "id": 1,
                 "project_name": "Resume",
                 "description": "",
-                "technologies": ["Bootstrap", "React", "React-Router-6"],
+                "technologies": [""],
                 "live_link": "https://winter-gardening.vercel.app/",
                 "github_link": "https://github.com/MBurtonshaw/winter_gardening",
-                "image_urls": ["/static/img/p1_1.png", "/static/img/p1_2.png", "/static/img/p1_3.png", "/static/img/p1_4.png"]
+                "image_urls": ["../img/p1_1.png"]
             },
             {
                 "id": 2,
                 "project_name": "Horror Films",
                 "description": "I'm a horror movie fan, and on the rare occasion I'm asked to give recommendations I usually come up blank, or can't think of the answers I would really want to give. So, I created this app as a reference to my favorites.",
-                "technologies": ["Bootstrap", "React", "React-Router-6"],
+                "technologies": ["Bootstrap", "React", "React-Router"],
                 "live_link": "https://horror-films.vercel.app/",
                 "github_link": "https://github.com/MBurtonshaw/horror_films",
-                "image_urls": ["/static/img/p3_1.png", "/static/img/p3_2.png", "/static/img/p3_3.png", "/static/img/p3_4.png"]
+                "image_urls": ["../img/p2_1.png", "../img/p2_2.png", "../img/p2_3.png", "../img/p2_4.png"]
             },
             {
                 "id": 3,
+                "project_name": "Horror Films Variants",
+                "description": "I took the main parts of the original Horror Films app and changed their style around to feel like different projects.",
+                "technologies": ["Bootstrap", "React", "React-Router"],
+                "live_link_1": "https://horror-films-2.vercel.app/",
+                "live_link_2": "https://horror-films-3.vercel.app/",
+                "github_link_1": "https://github.com/MBurtonshaw/horror_films_2",
+                "github_link_2": "https://github.com/MBurtonshaw/horror_films_3",
+                "image_urls": ["../../img/p3_1.png", "../../img/p3_2.png", "../../img/p3_3.png", "../../img/p3_4.png", "../../img/p3_5.png", "../../img/p3_6.png", "../../img/p3_7.png", "../../img/p3_8.png"]
+            },
+            {
+                "id": 4,
                 "project_name": "Winter Gardening Site",
                 "description": "Learn about Winter gardening in Northern climates, and how to extend the growing season even if there's snow on the ground. I made this while practicing Bootstrap with React",
                 "technologies": ["Bootstrap", "React", "React-Router-6"],
                 "live_link": "https://winter-gardening.vercel.app/",
                 "github_link": "https://github.com/MBurtonshaw/winter_gardening",
-                "image_urls": ["/static/img/p3_1.png", "/static/img/p3_2.png", "/static/img/p3_3.png", "/static/img/p3_4.png"]
+                "image_urls": ["../img/p4_1.png", "../img/p4_2.png", "../img/p4_3.png", "../img/p4_4.png"]
             },
             {
-                "id": 4,
+                "id": 5,
                 "project_name": "Cloak and Dagger Cocktail Lounge",
                 "description": "A website I made for a local cocktail bar using mostly vanilla Javascript and JQuery, early in my learning to program. It was made in collaboration with a designer and the business owner.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
                 "live_link": "http://twopinesdevelopment.com/cd/index.html",
                 "github_link": "https://github.com/MBurtonshaw/cloakanddaggercle",
-                "image_urls": ["/static/img/p4_1.png", "/static/img/p4_2.png", "/static/img/p4_3.png", "/static/img/p4_4.png"]
+                "image_urls": ["../img/p5_1.png", "../img/p5_2.png", "../img/p5_3.png", "../img/p5_4.png"]
             },
             {
-                "id": 5,
+                "id": 6,
                 "project_name": "Harvey Birdman, Attorney at Law",
                 "description": "A quick, one-page website for a fictional attorney I made while practicing Bootstrap. It contains all the front-end logic for a basic website including a form inside a modal.",
                 "technologies": ["Bootstrap", "HTML", "CSS"],
                 "live_link": "http://twopinesdevelopment.com/project_7/index.html",
                 "github_link": "https://github.com/MBurtonshaw/birdman",
-                "image_urls": ["/static/img/p5_1.png", "/static/img/p5_2.png", "/static/img/p5_3.png", "/static/img/p5_4.png"]
+                "image_urls": ["../img/p6_1.png", "/img/p6_2.png", "/img/p6_3.png", "../img/p6_4.png"]
             },
             {
                 
-                "id": 6,
+                "id": 7,
                 "project_name": "Full Stack Courses App",
                 "description": "An app for adding, removing, and editing classes. The front end was built w React; it has user sign-up and sign-in functionality; create, edit, and delete courses from a database",
                 "technologies": ["React", "React-Router", "Node.js", "SQL"],
                 "live_link": "https://verdant-cranachan-f205b0.netlify.app/projects/0/demo",
                 "github_link": "https://github.com/MBurtonshaw/project_10",
-                "image_urls": ["./img/p6_1.png", "/img/p6_2.png", "/img/p6_3.png"]
+                "image_urls": ["../img/p7_1.png", "../img/p7_2.png", "../img/p7_3.png"]
             },
             {
-                "id": 7,
+                "id": 8,
                 "project_name": "Library Database",
                 "description": "This is a full-stack app in which a user can work with book entries in a library database. Users can create, update, delete, and search for books by their id#.",
                 "technologies": ["SQL", "Express.js", "Node.js", "Pug"],
                 "live_link": "",
                 "github_link": "https://github.com/MBurtonshaw/project_eight",
-                "image_urls": ["/static/img/p7_1.png", "/static/img/p7_2.png", "/static/img/p7_3.png", "/static/img/p7_4.png"]
+                "image_urls": ["../img/p8_1.png", "../img/p8_2.png", "../img/p8_3.png", "../img/p8_4.png"]
             },
             {
-                "id": 8,
+                "id": 9,
                 "project_name": "Picture Search",
                 "description": "This is an app I made while practicing routing and navigation.  It asynchronously retrieves photos from the Flikr api based on the user's search term.",
                 "technologies": ["React", "React-Router", "Node.js"],
                 "live_link": "https://picture-search-zeta.vercel.app/dogs",
                 "github_link": "https://github.com/MBurtonshaw/project_seven",
-                "image_urls": ["/static/img/p8_1.png", "/static/img/p8_2.png", "/static/img/p8_3.png", "/static/img/p8_4.png"]
+                "image_urls": ["../img/p9_1.png", "../img/p9_2.png", "../img/p9_3.png", "../img/p9_4.png"]
             },
             {
-                "id": 9,
+                "id": 10,
                 "project_name": "Interactive Form",
                 "description": "This is the form validation project. To interact, fill out the form and submit when you're finished. The form will generate messages if any information is missing or in an incorrect format, add up the total cost for events, and cancel out overlapping choices. The form will not collect any actual information, this is for example purposes only. Upon submission the page will refresh.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
                 "live_link": "http://twopinesdevelopment.com/project_3/index.html",
                 "github_link": "https://github.com/MBurtonshaw/tech-degree-project-3",
-                "image_urls": ["/static/img/p9_1.png", "/static/img/p9_2.png", "/static/img/p9_3.png", "/static/img/p9_4.png"]
+                "image_urls": ["../img/p10_1.png", "../img/p10_2.png",  "../img/p10_3.png", "../img/p10_4.png"]
             },
             {
-                "id": 10,
+                "id": 11,
                 "project_name": "Phrase Hunter",
                 "description": "This project is the Phrase Hunter Game. Use your keyboard or the keys onscreen to guess the phrases. Choose a letter and if it's part of one of the phrases, the corresponding letter will appear. If it's not part of a phrase you will lose 1 of 5 hearts.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
                 "live_link": "http://twopinesdevelopment.com/project_4/index.html",
                 "github_link": "https://github.com/MBurtonshaw/tech-degree-project-4",
-                "image_urls": ["/static/img/p10_1.png", "/static/img/p10_2.png",  "/static/img/p10_3.png"]
+                "image_urls": ["../img/p11_1.png", "../img/p11_2.png", "../img/p11_3.png"]
             },
             {
-                "id": 11,
+                "id": 12,
                 "project_name": "Employee Directory",
                 "description": "A directory to search for employees. Use the dynamic search bar to filter results, and once you've found the right person, click for a personalized modal window of the 'user'.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
                 "live_link": "http://twopinesdevelopment.com/project_5/index.html",
                 "github_link": "https://github.com/MBurtonshaw/tech-degree-project-5",
-                "image_urls": ["/static/img/p11_1.png", "/static/img/p11_2.png", "/static/img/p11_3.png", "/static/img/p11_4.png"]
+                "image_urls": ["../img/p12_1.png", "../img/p12_2.png", "../img/p12_3.png", "../img/p12_4.png"]
             },
             {
-                "id": 12,
+                "id": 13,
                 "project_name": "Student Search & Pagination",
                 "description": "Use the search function to narrow down and find individual names, or click the pagination buttons at the bottom of the screen to switch between pages",
                 "technologies": ["HTML", "CSS", "JS"],
                 "live_link": "http://twopinesdevelopment.com/project_2/index.html",
                 "github_link": "https://github.com/MBurtonshaw/techdegree-project-2",
-                "image_urls": ["/static/img/p12_1.png", "/static/img/p12_2.png", "/static/img/p12_3.png"]
+                "image_urls": ["../img/p13_1.png", "../img/p13_2.png", "../img/p13_3.png"]
             },
             {
-                "id": 13,
+                "id": 14,
                 "project_name": "Random Quote Generator",
                 "description": "An early project while I was still learning how to code with Javascript. Click the button to generate a random quote from the list.",
                 "technologies": ["HTML", "CSS", "JS"],
                 "live_link": "http://twopinesdevelopment.com/project_1/index.html",
                 "github_link": "https://github.com/MBurtonshaw/techdegree-project-1",
-                "image_urls": ["/static/img/p13_1.png", "/static/img/p13_2.png", "/static/img/p13_3.png"]
+                "image_urls": ["../img/p14_1.png", "../img/p14_2.png", "../img/p14_3.png"]
             }
-            
-            
         ]
     }
 }
