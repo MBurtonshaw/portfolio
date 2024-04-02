@@ -3,6 +3,8 @@ import Home from './components/Home';
 import Header from './components/Header';
 import Variant from './components/Variant';
 import Filter from './components/Filter';
+import VariantCD from './components/VariantCD';
+import FilterCD from './components/FilterCD';
 
 import About from './components/About';
 import Project from './components/Project';
@@ -18,7 +20,8 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/projects/:id' element={<Project />} />
         <Route path='/projects/variants' element={<Filter />} />
-        <Route path='/projects/variant/:id' element={<Variant />} />
+        <Route path='/cd/variants' element={<FilterCD />} />
+        <Route path='/projects/cd/variants/:id' element={<VariantCD />} />
       </Routes>
     </div>
   )

@@ -89,56 +89,30 @@ export default function Home() {
 
     /*                          RENDER                                   */
     if (projects) {
-        if (window.innerWidth < 1400) {
-            if (window.innerWidth > 1199) {
-                return (
-                    <div id='home_wrapper' className={`${class_setter()}`}>
-                        <article className='portfolio-intro'>
-                            <h1 className='hat'>
-                                Hello!
-                            </h1>
-                            <p>
-                                My name is Matthew Burtonshaw and I'm a JavaScript developer.
-                                <br></br>
-                                Welcome to my portfolio!
-                                Click on a thumbnail to learn more about the projects I've worked on:
-                            </p>
-                        </article>
-                        <a href='/about' className='btn-link-3'>About Me</a>
-                        <article className='portfolio-project-thumbs'>
-                            <div className='projects-box box grid'>
-                                {
-                                    project_mapper()
-                                }
-                            </div>
-                        </article>
-                    </div>
-                );
-            } else {
-                return (
-                    <div id='home_wrapper' className='centered m-auto'>
-                        <article className='portfolio-intro'>
-                            <h1 className='hat'>
-                                Hello!
-                            </h1>
-                            <p>
-                                My name is Matthew Burtonshaw and I'm a JavaScript developer.
-                                <br></br>
-                                Welcome to my portfolio!
-                                Click on a thumbnail to learn more about the projects I've worked on:
-                            </p>
-                        </article>
-                        <a href='/about' className='btn-link-3'>About Me</a>
-                        <article className='portfolio-project-thumbs'>
-                            <div className='projects-box box grid'>
-                                {
-                                    project_mapper()
-                                }
-                            </div>
-                        </article>
-                    </div>
-                );
-            }
+        if (window.innerWidth < 1250) {
+            return (
+                <div id='home_wrapper' className='centered m-auto'>
+                    <article className='portfolio-intro'>
+                        <h1 className='hat'>
+                            Hello!
+                        </h1>
+                        <p>
+                            My name is Matthew Burtonshaw and I'm a JavaScript developer.
+                            <br></br>
+                            Welcome to my portfolio!
+                            Click on a thumbnail to learn more about the projects I've worked on:
+                        </p>
+                    </article>
+                    <a href='/about' className='btn-link-3'>About Me</a>
+                    <article className='portfolio-project-thumbs'>
+                        <div className='projects-box box grid'>
+                            {
+                                project_mapper()
+                            }
+                        </div>
+                    </article>
+                </div>
+            );
         } else {
             return (
                 <div className='row align-items-start'>

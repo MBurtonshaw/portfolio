@@ -25,7 +25,24 @@ export default function Project() {
         if (cred.toString() === project.id.toString()) {
 
             function link_sorter() {
-                if (project.id === 6 || project.id === 7) {
+                if (project.id === 5) {
+                    return (
+                        <div className='button_div'>
+                            <a className='btn-link' target='_blank' href={project.live_link}>
+                                Live Demo - Original
+                            </a>
+                            <a className='btn-link' target='_blank' href={project.github_link}>
+                                Github Repo - Original
+                            </a>
+                            <a className='btn-link' target='_blank' href={'https://cd-react.vercel.app/'}>
+                                Live Demo - React Redo
+                            </a>
+                            <a className='btn-link' target='_blank' href={'https://github.com/MBurtonshaw/cd_react'}>
+                                Github Repo - React Redo
+                            </a>
+                        </div>
+                    );
+                } else if (project.id === 6 || project.id === 7) {
                     return (
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.github_link}>
@@ -65,7 +82,7 @@ export default function Project() {
 
             /*                          RENDER                                   */
 
-            if (window.innerWidth < 1400) {
+            if (window.innerWidth < 1250) {
                 if (window.innerWidth < 768) {
                     return (
                         <div>
@@ -112,15 +129,15 @@ export default function Project() {
                     );
                 } else {
                     return (
-                        <div>
+                        <div className='px-1'>
                             <nav className='nav'>
                                 <a href='/'>
                                     Back
                                 </a>
                             </nav>
-                            <article className='portfolio-projects'>
+                            <article className='portfolio-projects-small'>
                                 <div className='inner-wrapper flex-row-wrap two-col'>
-                                    <div className='project-info-box box'>
+                                    <div className='project-info-box box m-auto text-center'>
                                         <h1>
                                             {project.project_name}
                                         </h1>
@@ -128,7 +145,7 @@ export default function Project() {
                                             {project.description}
                                         </p>
                                     </div>
-                                    <div className='project-tech-links-box box'>
+                                    <div className='project-tech-links-box box m-auto'>
                                         <h6>
                                             Technologies
                                         </h6>
@@ -141,7 +158,7 @@ export default function Project() {
                                         {link_sorter()}
                                     </div>
                                 </div>
-                                <div className='project-img-box box'>
+                                <div className='project-img-box box m-auto'>
                                     <img className='project_img project_img_small my-1 project_pic_border' src={project.image_urls[1]} />
                                     <img className='project_img project_img_small my-1 project_pic_border' src={project.image_urls[2]} />
                                     {pic_counter()}
@@ -153,9 +170,10 @@ export default function Project() {
                                 </nav>
                             </article>
                         </div>
+
                     );
                 }
-            } else {
+            } else if (window.innerWidth > 1500) {
                 return (
                     <div className='row align-items-start'>
                         <div className='sidebar_proj col' >
@@ -189,7 +207,7 @@ export default function Project() {
                                             <h1 className='text-center'>
                                                 {project.project_name}
                                             </h1>
-                                            <p className='py-3'>
+                                            <p className='py-3 text-center'>
                                                 {project.description}
                                             </p>
                                         </div>
@@ -208,8 +226,74 @@ export default function Project() {
                                     </div>
                                 </div>
                                 <div className='project-img-box box fly_up'>
-                                    <img className='project_img project_img_small my-1 project_pic_border' src={project.image_urls[1]} />
-                                    <img className='project_img project_img_small my-1 project_pic_border' src={project.image_urls[2]} />
+                                    <img className='project_img project_img_small m-auto my-1 project_pic_border' src={project.image_urls[1]} />
+                                    <img className='project_img project_img_small m-auto my-1 project_pic_border' src={project.image_urls[2]} />
+                                    {pic_counter()}
+                                </div>
+                                <nav className='nav'>
+                                    <a href='/'>
+                                        Back
+                                    </a>
+                                </nav>
+                            </article>
+                        </div>
+                    </div>
+                )
+            } else {
+                return (
+                    <div className='row align-items-start'>
+                        <div className='sidebar_proj col' >
+                            <div className='sidebar-info-box'>
+                                <br></br>
+                                <div className='thumbnail-box'>
+                                    <a href='/'>
+                                        <img className='thumbnail slow_fade' src={ProfilePhoto} />
+                                    </a>
+                                </div>
+                                <div className='dev-intro-box'>
+                                    <h5>
+                                        MATTHEW BURTONSHAW
+                                    </h5>
+                                    <a href='/about'>
+                                        Learn more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col'>
+                            <nav className='nav'>
+                                <a href='/'>
+                                    Back
+                                </a>
+                            </nav>
+                            <article className=''>
+                                <div className='inner-wrapper flex-row-wrap two-col'>
+                                    <div className='row align-items-start'>
+                                        <div className='project-info-box box col w-75 m-auto'>
+                                            <h1 className='text-center'>
+                                                {project.project_name}
+                                            </h1>
+                                            <p className='py-3 text-center'>
+                                                {project.description}
+                                            </p>
+                                        </div>
+                                        <div className='project-tech-links-box box col w-25 m-auto'>
+                                            <h6>
+                                                Technologies
+                                            </h6>
+                                            {
+                                                project.technologies.map(
+                                                    (technology, index) => <p key={index}>{technology}</p>
+                                                )
+                                            }
+                                            <br></br>
+                                            {link_sorter()}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='project-img-box box fly_up'>
+                                    <img className='project_img project_img_small m-auto my-1 project_pic_border' src={project.image_urls[1]} />
+                                    <img className='project_img project_img_small m-auto my-1 project_pic_border' src={project.image_urls[2]} />
                                     {pic_counter()}
                                 </div>
                                 <nav className='nav'>

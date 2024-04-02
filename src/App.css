@@ -118,6 +118,10 @@ p {
   padding-top: 40px;
 }
 
+.thinner {
+  width: 85%;
+}
+
 .box {
   width: 100%;
   max-width: 1200px;
@@ -364,6 +368,10 @@ p {
   margin-left: 7%;
 }
 
+.portfolio-projects-small {
+  width: 100%;
+}
+
 .portfolio-intro h1 {
   color: #0a0a0a;
   margin: 0 auto 8px;
@@ -390,7 +398,6 @@ p {
 
 .project-img {
   width: 100%;
-  max-width: 1065px;
   margin-bottom: 15px;
 }
 
@@ -426,7 +433,7 @@ p {
 }
 
 .sidebar {
-  min-height: 225vh;
+  min-height: 300vh;
   padding: 20px;
   background: #000;
   max-width: 16%;

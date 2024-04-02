@@ -52,7 +52,7 @@
             {
                 "id": 5,
                 "project_name": "Cloak and Dagger Cocktail Lounge",
-                "description": "A website I made for a local cocktail bar using mostly vanilla Javascript and JQuery, early in my learning to program. It was made in collaboration with a designer and the business owner.",
+                "description": "A website I made for a local cocktail bar using mostly vanilla Javascript and JQuery, early in my learning to program. It was made in collaboration with a designer and the business owner. Recently, I remade the whole site using React.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
                 "live_link": "http://twopinesdevelopment.com/cd/index.html",
                 "github_link": "https://github.com/MBurtonshaw/cloakanddaggercle",

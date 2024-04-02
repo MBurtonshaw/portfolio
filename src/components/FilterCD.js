@@ -10,7 +10,7 @@ export default function Filter() {
     let [projects, setProjects] = useState();
     async function getProjects() {
 
-        let info = [data.data.projects[3]];
+        let info = [data.data.projects[5]];
         setProjects(info);
 
     }
