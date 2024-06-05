@@ -22,6 +22,7 @@ function App() {
         <Route path='/projects/variants' element={<Filter />} />
         <Route path='/cd/variants' element={<FilterCD />} />
         <Route path='/projects/cd/variants/:id' element={<VariantCD />} />
+        <Route path='/projects/variant/:id' element={<Variant />} />
       </Routes>
     </div>
   )

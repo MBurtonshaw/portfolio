@@ -25,7 +25,7 @@ export default function Project() {
         if (cred.toString() === project.id.toString()) {
 
             function link_sorter() {
-                if (project.id === 5) {
+                if (project.id === 6) {
                     return (
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.live_link}>
@@ -42,7 +42,7 @@ export default function Project() {
                             </a>
                         </div>
                     );
-                } else if (project.id === 6 || project.id === 7) {
+                } else if (project.id === 7 || project.id === 8) {
                     return (
                         <div className='button_div'>
                             <a className='btn-link' target='_blank' href={project.github_link}>
@@ -65,7 +65,7 @@ export default function Project() {
             };
 
             function pic_counter() {
-                if (project.id !== 6 && project.id !== 10 && project.id !== 12 && project.id !== 13) {
+                if (project.id !== 7 && project.id !== 11 && project.id !== 13 && project.id !== 14) {
                     if (window.innerWidth < 768) {
                         return (
                             <img className='project_img project_img_small mt-1 project_pic_border' src={project.image_urls[3]} />

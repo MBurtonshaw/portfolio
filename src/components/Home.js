@@ -59,7 +59,7 @@ export default function Home() {
                             </a>
                         </div>
                     );
-                } else if (index === 3) {
+                } else if (index === 4) {
                     return (
                         <div className={`cell y-space ${animation_setter()}`} key={index}>
                             <a href={'/projects/variants'}>

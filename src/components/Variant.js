@@ -10,11 +10,11 @@ export default function Variant() {
     let [projects, setProjects] = useState();
     async function getProjects() {
         if (window.location.pathname === '/projects/variant/1') {
-            let info = [data.data.projects[3]];
+            let info = [data.data.projects[4]];
             setProjects(info);
         }
         if (window.location.pathname === '/projects/variant/2') {
-            let info = [data.data.projects[3]];
+            let info = [data.data.projects[4]];
             setProjects(info);
         }
     }
