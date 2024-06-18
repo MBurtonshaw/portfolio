@@ -20,7 +20,7 @@ export default function About() {
                             Matthew Burtonshaw
                         </h1>
                         <p>
-                            Full Stack Javascript Developer
+                            Full Stack Developer
                         </p>
                         <h5 className='pt-3 my-2'>Skills: </h5>
                         <span>
@@ -67,7 +67,7 @@ export default function About() {
                         Matthew Burtonshaw
                     </h1>
                     <p>
-                        Full Stack Javascript Developer
+                        Full Stack Developer
                     </p>
                     <div className='about-bio'>
                         <p>
