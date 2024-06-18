@@ -4,20 +4,19 @@
         "projects": [
             {
                 "id": 0,
+                "project_name": "Resume",
+                "description": "",
+                "technologies": [""],
+                "live_link": "http://twopinesdevelopment.com/Resume.pdf",
+                "image_urls": ["../img/p0_1.png"]
+            },
+            {
+                "id": 1,
                 "project_name": "Certification",
                 "description": "",
                 "technologies": [""],
                 "live_link": "https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx",
                 "github_link": "",
-                "image_urls": ["../img/p0_1.png"]
-            },
-            {
-                "id": 1,
-                "project_name": "Resume",
-                "description": "",
-                "technologies": [""],
-                "live_link": "https://winter-gardening.vercel.app/",
-                "github_link": "https://github.com/MBurtonshaw/winter_gardening",
                 "image_urls": ["../img/p1_1.png"]
             },
             {

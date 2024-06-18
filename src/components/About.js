@@ -3,7 +3,7 @@ import ProfilePhoto from '../portfolio/img/ProfilePhoto.jpg';
 
 export default function About() {
 
-    let skill_array = ['HTML', 'CSS', 'Javascript', 'JQuery', 'Node.js', 'JSON', 'Express', 'Pug', 'Bootstrap', 'React', 'SQL'];
+    let skill_array = ['Java', 'HTML', 'CSS', 'JavaScript', 'Spring Boot', 'Vue.js', 'React.js', 'JDBC', 'Table Design', 'SQL', 'PostgreSQL', 'E/R Diagrams', 'Agile', 'Unit Testing (JUnit)', 'Integration Testing', 'Git', 'IntelliJ', 'Bootstrap', 'Node.js', 'Express.js'];
 
     function filler_1() {
         if (window.innerWidth < 768) {
@@ -22,16 +22,14 @@ export default function About() {
                         <p>
                             Full Stack Javascript Developer
                         </p>
-                        <h5 className='pt-3'>Skills: </h5>
+                        <h5 className='pt-3 my-2'>Skills: </h5>
                         <span>
                             {
                                 skill_array.map(
                                     (skill) => {
-                                        if (skill !== 'SQL') {
+                                       
                                             return (skill + ', ')
-                                        } else {
-                                            return (skill)
-                                        }
+                                        
 
                                     }
                                 )
@@ -39,13 +37,12 @@ export default function About() {
                         </span>
                         <div className='about-bio w-75 m-auto px-1'>
                             <p>
-                                I'm a self taught web developer, which began when I received the Full Stack JavaScript Tech Degree from TeamTreehouse (teamtreehouse.com). This curriculum allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work building meaningful and fulfilling projects.
+                                Hi! I'm Matt Burtonshaw, a former horticulturist transitioning into the world of Full Stack Java development through Tech Elevator. With a background rooted in research farming, my journey has always been fueled by a passion for strategy and design, as well as digging into learning what makes things work. Now, in the realm of programming, I find the perfect fusion of these interests.
                                 <br></br>
                                 <br></br>
-                                In my previous job, I worked for Case Western Reserve University on a research farm, where I took part in team planning, led guided tours, managed growing areas and taught classes related to Horticulture. But after years of this type of work, I found my interests had shifted elsewhere.
+                                Crafting intuitive user interfaces and strategically unravelling complex problems deeply resonate with me. I'm eager to leverage my strategic insights and collaborative spirit to contribute meaningfully to a team, where I can fuse my expertise in horticulture with my burgeoning skills in software development to create impactful applications.
                                 <br></br>
                                 <br></br>
-                                Since focusing on web development, I've also had the opportunity to build the website for a local cocktail bar, which taught me about real-world application of the skills I'd been learning. Since then, I've been working on personal websites in order to continue to practice new techniques and build my portfolio. Going forward, I would like to find meaningful work that will help me to grow as a programmer.
                             </p>
 
                         </div>
@@ -74,13 +71,12 @@ export default function About() {
                     </p>
                     <div className='about-bio'>
                         <p>
-                            I'm a self taught web developer, which began when I received the Full Stack JavaScript Tech Degree from TeamTreehouse (teamtreehouse.com). This curriculum allowed me to learn and utilize JavaScript, JQuery, Express, SQL, React, and more. Through these classes I have been able to practice these skills to build a variety of applications. Going forward, I'd like to find work building meaningful and fulfilling projects.
+                            Hi! I'm Matt Burtonshaw, a former horticulturist transitioning into the world of Full Stack Java development through Tech Elevator. With a background rooted in research farming, my journey has always been fueled by a passion for strategy and design, as well as digging into learning what makes things work. Now, in the realm of programming, I find the perfect fusion of these interests.
                             <br></br>
                             <br></br>
-                            In my previous job, I worked for Case Western Reserve University on a research farm, where I took part in team planning, led guided tours, managed growing areas and taught classes related to Horticulture. But after years of this type of work, I found my interests had shifted elsewhere.
+                            Crafting intuitive user interfaces and strategically unravelling complex problems deeply resonate with me. I'm eager to leverage my strategic insights and collaborative spirit to contribute meaningfully to a team, where I can fuse my expertise in horticulture with my burgeoning skills in software development to create impactful applications.
                             <br></br>
                             <br></br>
-                            Since focusing on web development, I've also had the opportunity to build the website for a local cocktail bar, which taught me about real-world application of the skills I'd been learning. Since then, I've been working on personal websites in order to continue to practice new techniques and build my portfolio. Going forward, I would like to find meaningful work that will help me to grow as a programmer.
                         </p>
                     </div>
                     <br></br>
@@ -105,7 +101,7 @@ export default function About() {
         } else {
             return (
                 <div className='skills-contact-box col w-25 m-auto fly_down'>
-                    <h6 className='indent listed'>
+                    <h6 className='indent my-4 pt-4'>
                         Skills
                     </h6>
                     {
@@ -113,7 +109,7 @@ export default function About() {
                             return (<p key={i} className='listed'>{skill}</p>);
                         })
                     }
-                    <h6 className='indent'>
+                    <h6 className='indent my-3 pt-4'>
                         Contact Info
                     </h6>
                     <p >
@@ -134,8 +130,11 @@ export default function About() {
                 <div>
                     <article className='portfolio-about text-center'>
                         <div id='' className='inner-wrapper flex-row-wrap'>
-                            <div className=''>
-                                {filler_1()}
+                            <div>
+                                <div className='w-75 mx-auto'>
+                                    {filler_1()}
+                                </div>
+                              
                                 {filler_2()}
                             </div>
                         </div>

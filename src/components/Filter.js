@@ -26,7 +26,7 @@ export default function Filter() {
             if (window.innerWidth < 768) {
                 return (
                     <div>
-                        <nav className='nav text-center'>
+                        <nav className='nav mx-3'>
                             <a href='/'>
                                 Back
                             </a>
@@ -41,21 +41,16 @@ export default function Filter() {
                                         {projects[0].description}
                                     </p>
                                 </div>
-                                <div className='project-tech-links-box box'>
-                                    <h6>
-                                        Technologies
-                                    </h6>
-                                    {
-
-                                    }
-                                    <br></br>
-
-                                </div>
+                                <h3 className='my-0 mt-5 w-100 text-center'>Choose a theme:</h3>
+                                    <div className='row align-items-start w-75 mx-auto my-5'>
+                                        <a className='col' href='/projects/variant/1'><div className='p-5 mx-1' style={{ backgroundColor: 'rgb(147, 28, 28)' }}><h3 className='text-center nonchalant'>Theme 1</h3></div></a>
+                                        <a className='col' href='/projects/variant/2'><div className='p-5 mx-1' style={{ backgroundColor: 'rgb(12, 28, 48)' }}><h3 className='text-center nonchalant'>Theme 2</h3></div></a>
+                                    </div>
                             </div>
                             <div className='project-img-box'>
                             </div>
                         </article>
-                        <nav className='nav text-center'>
+                        <nav className='nav mx-3'>
                             <a href='/'>
                                 Back
                             </a>
@@ -65,14 +60,14 @@ export default function Filter() {
             } else {
                 return (
                     <div>
-                        <nav className='nav'>
+                        <nav className='mx-2 nav'>
                             <a href='/'>
                                 Back
                             </a>
                         </nav>
-                        <article className='portfolio-projects'>
+                        <article className='portfolio-projects mx-auto'>
                             <div className='inner-wrapper flex-row-wrap two-col'>
-                                <div className='project-info-box box'>
+                                <div className='project-info-box box w-75 m-auto text-center'>
                                     <h1>
                                         {projects[0].project_name}
                                     </h1>
@@ -80,20 +75,18 @@ export default function Filter() {
                                         {projects[0].description}
                                     </p>
                                 </div>
-                                <div className='project-tech-links-box box'>
-                                    <h6>
-                                        Technologies
-                                    </h6>
-                                    {
-
-                                    }
-                                    <br></br>
-
+                                <div className='w-75 m-auto'>
+                                <h3 className='my-0 mt-5 w-100 text-center'>Choose a theme:</h3>
+                                    <div className='row align-items-start w-100 mx-auto my-5'>
+                                        <a className='col' href='/projects/variant/1'><div className='p-5 mx-1' style={{ backgroundColor: 'rgb(147, 28, 28)' }}><h3 className='text-center nonchalant'>Theme 1</h3></div></a>
+                                        <a className='col' href='/projects/variant/2'><div className='p-5 mx-1' style={{ backgroundColor: 'rgb(12, 28, 48)' }}><h3 className='text-center nonchalant'>Theme 2</h3></div></a>
+                                    </div>
                                 </div>
+                                
                             </div>
                             <div className='project-img-box box'>
                             </div>
-                            <nav className='nav'>
+                            <nav className='mx-2 nav'>
                                 <a href='/'>
                                     Back
                                 </a>

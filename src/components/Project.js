@@ -42,9 +42,12 @@ export default function Project() {
                             </a>
                         </div>
                     );
-                } else if (project.id === 7 || project.id === 8) {
+                } else if (project.live_link !== '' && project.live_link != null) {
                     return (
                         <div className='button_div'>
+                            <a className='btn-link' target='_blank' href={project.live_link}>
+                                Live Demo
+                            </a>
                             <a className='btn-link' target='_blank' href={project.github_link}>
                                 Github Repo
                             </a>
@@ -53,9 +56,6 @@ export default function Project() {
                 } else {
                     return (
                         <div className='button_div'>
-                            <a className='btn-link' target='_blank' href={project.live_link}>
-                                Live Demo
-                            </a>
                             <a className='btn-link' target='_blank' href={project.github_link}>
                                 Github Repo
                             </a>
@@ -86,7 +86,7 @@ export default function Project() {
                 if (window.innerWidth < 768) {
                     return (
                         <div>
-                            <nav className='nav text-center'>
+                            <nav className='nav mx-3'>
                                 <a href='/'>
                                     Back
                                 </a>
@@ -120,7 +120,7 @@ export default function Project() {
                                     {pic_counter()}
                                 </div>
                             </article>
-                            <nav className='nav text-center'>
+                            <nav className='nav mx-3'>
                                 <a href='/'>
                                     Back
                                 </a>
@@ -130,7 +130,7 @@ export default function Project() {
                 } else {
                     return (
                         <div className='px-1'>
-                            <nav className='nav'>
+                            <nav className='nav mx-3'>
                                 <a href='/'>
                                     Back
                                 </a>
@@ -163,7 +163,7 @@ export default function Project() {
                                     <img className='project_img project_img_small my-1 project_pic_border' src={project.image_urls[2]} />
                                     {pic_counter()}
                                 </div>
-                                <nav className='nav'>
+                                <nav className='nav mx-3'>
                                     <a href='/'>
                                         Back
                                     </a>
@@ -230,7 +230,7 @@ export default function Project() {
                                     <img className='project_img project_img_small m-auto my-1 project_pic_border' src={project.image_urls[2]} />
                                     {pic_counter()}
                                 </div>
-                                <nav className='nav'>
+                                <nav className='nav mx-3'>
                                     <a href='/'>
                                         Back
                                     </a>

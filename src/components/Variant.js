@@ -58,17 +58,17 @@ export default function Variant() {
             if (window.location.pathname === '/projects/variant/1') {
                 return (
                     <div>
-                        <img className='project_img project_img_small my-1 project_pic_border' src={projects[0].image_urls[1]} />
-                        <img className='project_img project_img_small my-1 project_pic_border' src={projects[0].image_urls[2]} />
-                        <img className='project_img project_img_small my-1 project_pic_border' src={projects[0].image_urls[3]} />
+                        <img className='project_img_small my-1 project_pic_border' src={projects[0].image_urls[1]} />
+                        <img className='project_img_small my-1 project_pic_border' src={projects[0].image_urls[2]} />
+                        <img className='project_img_small my-1 project_pic_border' src={projects[0].image_urls[3]} />
                     </div>
                 );
             } else if (window.location.pathname === '/projects/variant/2') {
                 return (
                     <div>
-                        <img className='project_img project_img_small my-1 project_pic_border' src={projects[0].image_urls[6]} />
-                        <img className='project_img project_img_small my-1 project_pic_border' src={projects[0].image_urls[7]} />
-                        <img className='project_img project_img_small my-1 project_pic_border' src={projects[0].image_urls[5]} />
+                        <img className='project_img my-1 project_pic_border' src={projects[0].image_urls[6]} />
+                        <img className='project_img my-1 project_pic_border' src={projects[0].image_urls[7]} />
+                        <img className='project_img my-1 project_pic_border' src={projects[0].image_urls[5]} />
                     </div>
                 );
             }
@@ -217,7 +217,6 @@ export default function Variant() {
                                 </div>
                             </div>
                             <div className='project-img-box box fly_up'>
-
                                 {pic_counter()}
                             </div>
                             <nav className='nav'>

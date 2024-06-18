@@ -130,6 +130,10 @@ p {
   border-bottom: 1px solid #eaeaea;
 }
 
+.listed {
+  line-height: 80%;
+}
+
 .nonchalant {
   text-decoration: none;
   list-style: none;
@@ -411,6 +415,11 @@ p {
 
 .project_img_small {
   width: 100%;
+}
+
+.project_img_variant {
+  width: 85%;
+  margin: auto;
 }
 
 .project-tech-links-box {
