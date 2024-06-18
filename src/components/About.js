@@ -47,8 +47,8 @@ export default function About() {
 
                         </div>
                         <div className='py-4'>
-                            <button className='btn-link-5'><a href='http://twopinesdevelopment.com/Tech_Resume.pdf'>Resume</a></button>
-                            <button className='btn-link-5'><a href='https://www.linkedin.com/in/matthew-burtonshaw-9495b1191/'>LinkedIn</a></button>
+                            <button className='btn-link-5'><a href='http://twopinesdevelopment.com/Resume.pdf'>Resume</a></button>
+                            <button className='btn-link-5'><a href='https://www.linkedin.com/in/matthew-burtonshaw/'>LinkedIn</a></button>
                             <button className='btn-link-5'><a href='https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'>Certification</a></button>
                             <button className='btn-link-5'><a href='https://github.com/MBurtonshaw'>Github</a></button>
                         </div>
@@ -82,8 +82,8 @@ export default function About() {
                     <br></br>
                     <br></br>
                     <div className='py-1'>
-                        <button className='btn-link-4'><a href='http://twopinesdevelopment.com/Tech_Resume.pdf'>Resume</a></button>
-                        <button className='btn-link-4'><a href='https://www.linkedin.com/in/matthew-burtonshaw-9495b1191/'>LinkedIn</a></button>
+                        <button className='btn-link-4'><a href='http://twopinesdevelopment.com/Resume.pdf'>Resume</a></button>
+                        <button className='btn-link-4'><a href='https://www.linkedin.com/in/matthew-burtonshaw/'>LinkedIn</a></button>
                         <button className='btn-link-4'><a href='https://www.credential.net/1c38bf64-c9b4-4fe0-a6b7-612560765a2a#gs.6bfdvx'>Certification</a></button>
                         <button className='btn-link-4'><a href='https://github.com/MBurtonshaw'>Github</a></button>
                     </div>
