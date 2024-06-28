@@ -75,7 +75,7 @@
                 "image_urls": ["../img/p7_1.png", "/img/p7_2.png", "/img/p7_3.png", "../img/p7_4.png"]
             },
             {
-                "id": 10,
+                "id": 8,
                 "project_name": "Picture Search",
                 "description": "This is an app I made while practicing routing and navigation.  It asynchronously retrieves photos from the Flikr api based on the user's search term.",
                 "technologies": ["React", "React-Router", "Node.js"],
@@ -84,7 +84,7 @@
                 "image_urls": ["../img/p10_1.png", "../img/p10_2.png", "../img/p10_3.png", "../img/p10_4.png"]
             },
             {
-                "id": 11,
+                "id": 9,
                 "project_name": "Interactive Form",
                 "description": "This is the form validation project. To interact, fill out the form and submit when you're finished. The form will generate messages if any information is missing or in an incorrect format, add up the total cost for events, and cancel out overlapping choices. The form will not collect any actual information, this is for example purposes only. Upon submission the page will refresh.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
@@ -93,7 +93,7 @@
                 "image_urls": ["../img/p11_1.png", "../img/p11_2.png",  "../img/p11_3.png", "../img/p11_4.png"]
             },
             {
-                "id": 12,
+                "id": 10,
                 "project_name": "Phrase Hunter",
                 "description": "This project is the Phrase Hunter Game. Use your keyboard or the keys onscreen to guess the phrases. Choose a letter and if it's part of one of the phrases, the corresponding letter will appear. If it's not part of a phrase you will lose 1 of 5 hearts.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
@@ -102,7 +102,7 @@
                 "image_urls": ["../img/p12_1.png", "../img/p12_2.png", "../img/p12_3.png"]
             },
             {
-                "id": 13,
+                "id": 11,
                 "project_name": "Employee Directory",
                 "description": "A directory to search for employees. Use the dynamic search bar to filter results, and once you've found the right person, click for a personalized modal window of the 'user'.",
                 "technologies": ["HTML", "CSS", "JS", "JQuery"],
@@ -111,7 +111,7 @@
                 "image_urls": ["../img/p13_1.png", "../img/p13_2.png", "../img/p13_3.png", "../img/p13_4.png"]
             },
             {
-                "id": 14,
+                "id": 12,
                 "project_name": "Student Search & Pagination",
                 "description": "Use the search function to narrow down and find individual names, or click the pagination buttons at the bottom of the screen to switch between pages",
                 "technologies": ["HTML", "CSS", "JS"],
@@ -120,7 +120,7 @@
                 "image_urls": ["../img/p14_1.png", "../img/p14_2.png", "../img/p14_3.png"]
             },
             {
-                "id": 15,
+                "id": 13,
                 "project_name": "Random Quote Generator",
                 "description": "An early project while I was still learning how to code with Javascript. Click the button to generate a random quote from the list.",
                 "technologies": ["HTML", "CSS", "JS"],

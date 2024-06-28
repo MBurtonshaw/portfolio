@@ -65,16 +65,10 @@ export default function Project() {
             };
 
             function pic_counter() {
-                if (project.id !== 7 && project.id !== 11 && project.id !== 13 && project.id !== 14) {
-                    if (window.innerWidth < 768) {
+                if (project.id !== 2 && project.id !== 10 && project.id !== 13) {
                         return (
                             <img className='project_img project_img_small mt-1 project_pic_border' src={project.image_urls[3]} />
                         );
-                    } else {
-                        return (
-                            <img className='project_img project_img_small mt-1 project_pic_border' src={project.image_urls[3]} />
-                        );
-                    }
                 } else {
                     return null;
                 }
