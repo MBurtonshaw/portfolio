@@ -66,9 +66,9 @@ export default function Variant() {
             } else if (window.location.pathname === '/projects/variant/2') {
                 return (
                     <div>
-                        <img className='project_img my-1 project_pic_border' src={projects[0].image_urls[6]} />
-                        <img className='project_img my-1 project_pic_border' src={projects[0].image_urls[7]} />
-                        <img className='project_img my-1 project_pic_border' src={projects[0].image_urls[5]} />
+                        <img className='project_img_small my-1 project_pic_border' src={projects[0].image_urls[6]} />
+                        <img className='project_img_small my-1 project_pic_border' src={projects[0].image_urls[7]} />
+                        <img className='project_img_small my-1 project_pic_border' src={projects[0].image_urls[5]} />
                     </div>
                 );
             }
@@ -87,7 +87,7 @@ export default function Variant() {
         if (window.innerWidth < 1400) {
             if (window.innerWidth < 768) {
                 return (
-                    <div>
+                    <div>s
                         <nav className='nav text-center'>
                             <a href='/'>
                                 Back
@@ -149,7 +149,7 @@ export default function Variant() {
                                     </h6>
                                     {
                                         technology_mapper()
-                                        }
+                                    }
                                     <br></br>
                                     {link_sorter()}
                                 </div>
@@ -210,7 +210,7 @@ export default function Variant() {
                                         </h6>
                                         {
                                             technology_mapper()
-                                            }
+                                        }
                                         <br></br>
                                         {link_sorter()}
                                     </div>

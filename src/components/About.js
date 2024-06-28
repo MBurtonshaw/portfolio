@@ -27,9 +27,9 @@ export default function About() {
                             {
                                 skill_array.map(
                                     (skill) => {
-                                       
-                                            return (skill + ', ')
-                                        
+
+                                        return (skill + ', ')
+
 
                                     }
                                 )
@@ -134,7 +134,7 @@ export default function About() {
                                 <div className='w-75 mx-auto'>
                                     {filler_1()}
                                 </div>
-                              
+
                                 {filler_2()}
                             </div>
                         </div>

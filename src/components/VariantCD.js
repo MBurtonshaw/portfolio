@@ -149,7 +149,7 @@ export default function Variant() {
                                     </h6>
                                     {
                                         technology_mapper()
-                                        }
+                                    }
                                     <br></br>
                                     {link_sorter()}
                                 </div>
@@ -210,7 +210,7 @@ export default function Variant() {
                                         </h6>
                                         {
                                             technology_mapper()
-                                            }
+                                        }
                                         <br></br>
                                         {link_sorter()}
                                     </div>

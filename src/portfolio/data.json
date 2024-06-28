@@ -75,25 +75,6 @@
                 "image_urls": ["../img/p7_1.png", "/img/p7_2.png", "/img/p7_3.png", "../img/p7_4.png"]
             },
             {
-                
-                "id": 8,
-                "project_name": "Full Stack Courses App",
-                "description": "An app for adding, removing, and editing classes. The front end was built w React; it has user sign-up and sign-in functionality; create, edit, and delete courses from a database",
-                "technologies": ["React", "React-Router", "Node.js", "SQL"],
-                "live_link": "https://verdant-cranachan-f205b0.netlify.app/projects/0/demo",
-                "github_link": "https://github.com/MBurtonshaw/project_10",
-                "image_urls": ["../img/p8_1.png", "../img/p8_2.png", "../img/p8_3.png"]
-            },
-            {
-                "id": 9,
-                "project_name": "Library Database",
-                "description": "This is a full-stack app in which a user can work with book entries in a library database. Users can create, update, delete, and search for books by their id#.",
-                "technologies": ["SQL", "Express.js", "Node.js", "Pug"],
-                "live_link": "",
-                "github_link": "https://github.com/MBurtonshaw/project_eight",
-                "image_urls": ["../img/p9_1.png", "../img/p9_2.png", "../img/p9_3.png", "../img/p9_4.png"]
-            },
-            {
                 "id": 10,
                 "project_name": "Picture Search",
                 "description": "This is an app I made while practicing routing and navigation.  It asynchronously retrieves photos from the Flikr api based on the user's search term.",
